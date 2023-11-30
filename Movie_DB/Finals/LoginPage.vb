@@ -50,7 +50,11 @@ Public Class LoginPage
 
     End Sub
 
+    Private Sub Guna2Button2_Click(sender As Object, e As EventArgs) Handles Guna2Button2.Click
+        ' Create an instance of Form2
+        Dim register As New CreateAccount()
 
-
-
+        ' Show Form2
+        register.Show()
+    End Sub
 End Class
