@@ -3,10 +3,14 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net6.0-windows</TargetFramework>
-    <StartupObject>Finals.CreateAccount</StartupObject>
+    <StartupObject>Finals.My.MyApplication</StartupObject>
     <UseWindowsForms>true</UseWindowsForms>
     <MyType>WindowsForms</MyType>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="SelectionOfUser.vb~RF59c717e.TMP" />
+  </ItemGroup>
 
   <ItemGroup>
     <Import Include="System.Data" />

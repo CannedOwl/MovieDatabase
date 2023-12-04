@@ -2055,19 +2055,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\lenovo\\.nuget\\packages\\": {}
+    "C:\\Users\\Dominic\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Git repo\\MovieDatabase\\Movie_DB\\Finals\\Finals.vbproj",
+      "projectUniqueName": "D:\\repo\\Finals\\MovieDatabase\\Movie_DB\\Finals\\Finals.vbproj",
       "projectName": "Finals",
-      "projectPath": "D:\\Git repo\\MovieDatabase\\Movie_DB\\Finals\\Finals.vbproj",
-      "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
-      "outputPath": "D:\\Git repo\\MovieDatabase\\Movie_DB\\Finals\\obj\\",
+      "projectPath": "D:\\repo\\Finals\\MovieDatabase\\Movie_DB\\Finals\\Finals.vbproj",
+      "packagesPath": "C:\\Users\\Dominic\\.nuget\\packages\\",
+      "outputPath": "D:\\repo\\Finals\\MovieDatabase\\Movie_DB\\Finals\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Dominic\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
