@@ -107,7 +107,7 @@ Partial Class SelectionOfUser
         Guna2ShadowPanel1.Location = New Point(0, 0)
         Guna2ShadowPanel1.Margin = New Padding(4, 5, 4, 5)
         Guna2ShadowPanel1.Name = "Guna2ShadowPanel1"
-        Guna2ShadowPanel1.ShadowColor = Color.FromArgb(CByte(33), CByte(42), CByte(57))
+        Guna2ShadowPanel1.ShadowColor = SystemColors.ActiveCaptionText
         Guna2ShadowPanel1.ShadowDepth = 70
         Guna2ShadowPanel1.ShadowShift = 100
         Guna2ShadowPanel1.Size = New Size(1473, 52)
@@ -163,7 +163,7 @@ Partial Class SelectionOfUser
         ' 
         ' Panel1
         ' 
-        Panel1.BackColor = Color.DimGray
+        Panel1.BackColor = SystemColors.Desktop
         Panel1.Controls.Add(BtnWtchlst)
         Panel1.Controls.Add(BtnProfile)
         Panel1.Controls.Add(Button3)
@@ -179,60 +179,64 @@ Partial Class SelectionOfUser
         ' 
         ' BtnWtchlst
         ' 
-        BtnWtchlst.Font = New Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
-        BtnWtchlst.Location = New Point(0, 233)
+        BtnWtchlst.BackColor = Color.Gainsboro
+        BtnWtchlst.Font = New Font("Segoe UI", 13F, FontStyle.Bold, GraphicsUnit.Point)
+        BtnWtchlst.Location = New Point(4, 233)
         BtnWtchlst.Margin = New Padding(4, 5, 4, 5)
         BtnWtchlst.Name = "BtnWtchlst"
-        BtnWtchlst.Size = New Size(159, 102)
+        BtnWtchlst.Size = New Size(145, 102)
         BtnWtchlst.TabIndex = 13
         BtnWtchlst.Text = "Watchlist"
-        BtnWtchlst.UseVisualStyleBackColor = True
+        BtnWtchlst.UseVisualStyleBackColor = False
         BtnWtchlst.Visible = False
         ' 
         ' BtnProfile
         ' 
-        BtnProfile.Font = New Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
-        BtnProfile.Location = New Point(1, 652)
+        BtnProfile.BackColor = Color.Gainsboro
+        BtnProfile.Font = New Font("Segoe UI", 13F, FontStyle.Bold, GraphicsUnit.Point)
+        BtnProfile.Location = New Point(4, 639)
         BtnProfile.Margin = New Padding(4, 5, 4, 5)
         BtnProfile.Name = "BtnProfile"
-        BtnProfile.Size = New Size(159, 102)
+        BtnProfile.Size = New Size(145, 102)
         BtnProfile.TabIndex = 12
         BtnProfile.Text = "PROFILE"
-        BtnProfile.UseVisualStyleBackColor = True
+        BtnProfile.UseVisualStyleBackColor = False
         ' 
         ' Button3
         ' 
         Button3.BackColor = Color.RosyBrown
-        Button3.Font = New Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
-        Button3.Location = New Point(0, 763)
+        Button3.Font = New Font("Segoe UI", 13F, FontStyle.Bold, GraphicsUnit.Point)
+        Button3.Location = New Point(4, 751)
         Button3.Margin = New Padding(4, 5, 4, 5)
         Button3.Name = "Button3"
-        Button3.Size = New Size(159, 102)
+        Button3.Size = New Size(145, 102)
         Button3.TabIndex = 11
         Button3.Text = "LOG OUT"
         Button3.UseVisualStyleBackColor = False
         ' 
         ' Button2
         ' 
-        Button2.Font = New Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
-        Button2.Location = New Point(0, 122)
+        Button2.BackColor = Color.Gainsboro
+        Button2.Font = New Font("Segoe UI", 13F, FontStyle.Bold, GraphicsUnit.Point)
+        Button2.Location = New Point(4, 122)
         Button2.Margin = New Padding(4, 5, 4, 5)
         Button2.Name = "Button2"
-        Button2.Size = New Size(159, 102)
+        Button2.Size = New Size(145, 101)
         Button2.TabIndex = 10
         Button2.Text = "BROWSE"
-        Button2.UseVisualStyleBackColor = True
+        Button2.UseVisualStyleBackColor = False
         ' 
         ' Button1
         ' 
-        Button1.Font = New Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
-        Button1.Location = New Point(0, 10)
+        Button1.BackColor = Color.Gainsboro
+        Button1.Font = New Font("Segoe UI", 13F, FontStyle.Bold, GraphicsUnit.Point)
+        Button1.Location = New Point(4, 10)
         Button1.Margin = New Padding(4, 5, 4, 5)
         Button1.Name = "Button1"
-        Button1.Size = New Size(159, 102)
+        Button1.Size = New Size(145, 102)
         Button1.TabIndex = 9
         Button1.Text = "HOME"
-        Button1.UseVisualStyleBackColor = True
+        Button1.UseVisualStyleBackColor = False
         ' 
         ' Panel2
         ' 
@@ -281,6 +285,7 @@ Partial Class SelectionOfUser
         ' exploreTab
         ' 
         exploreTab.BackColor = SystemColors.ButtonShadow
+        exploreTab.BackgroundImage = CType(resources.GetObject("exploreTab.BackgroundImage"), Image)
         exploreTab.Controls.Add(Guna2Button1)
         exploreTab.Controls.Add(Guna2Button3)
         exploreTab.Controls.Add(GbtnFS)
@@ -303,33 +308,40 @@ Partial Class SelectionOfUser
         ' 
         ' Guna2Button1
         ' 
+        Guna2Button1.AutoRoundedCorners = True
+        Guna2Button1.BackColor = Color.Transparent
+        Guna2Button1.BorderRadius = 27
         Guna2Button1.CustomizableEdges = CustomizableEdges5
         Guna2Button1.DisabledState.BorderColor = Color.DarkGray
         Guna2Button1.DisabledState.CustomBorderColor = Color.DarkGray
         Guna2Button1.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
         Guna2Button1.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
-        Guna2Button1.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        Guna2Button1.FillColor = SystemColors.ControlDarkDark
+        Guna2Button1.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point)
         Guna2Button1.ForeColor = Color.White
-        Guna2Button1.Location = New Point(1114, 718)
+        Guna2Button1.Location = New Point(1111, 754)
         Guna2Button1.Margin = New Padding(4, 5, 4, 5)
         Guna2Button1.Name = "Guna2Button1"
         Guna2Button1.ShadowDecoration.CustomizableEdges = CustomizableEdges6
-        Guna2Button1.Size = New Size(156, 72)
+        Guna2Button1.Size = New Size(156, 57)
         Guna2Button1.TabIndex = 18
         Guna2Button1.Text = "Add to Watchlist"
         ' 
         ' Guna2Button3
         ' 
-        Guna2Button3.BorderRadius = 10
+        Guna2Button3.AutoRoundedCorners = True
+        Guna2Button3.BackColor = Color.Transparent
+        Guna2Button3.BorderRadius = 18
         Guna2Button3.CustomBorderThickness = New Padding(32, 0, 0, 0)
         Guna2Button3.CustomizableEdges = CustomizableEdges7
         Guna2Button3.DisabledState.BorderColor = Color.DarkGray
         Guna2Button3.DisabledState.CustomBorderColor = Color.DarkGray
         Guna2Button3.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
         Guna2Button3.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
-        Guna2Button3.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        Guna2Button3.FillColor = SystemColors.ControlDarkDark
+        Guna2Button3.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point)
         Guna2Button3.ForeColor = Color.White
-        Guna2Button3.Location = New Point(1016, 153)
+        Guna2Button3.Location = New Point(1024, 209)
         Guna2Button3.Margin = New Padding(4, 5, 4, 5)
         Guna2Button3.Name = "Guna2Button3"
         Guna2Button3.ShadowDecoration.CustomizableEdges = CustomizableEdges8
@@ -339,16 +351,19 @@ Partial Class SelectionOfUser
         ' 
         ' GbtnFS
         ' 
-        GbtnFS.BorderRadius = 10
+        GbtnFS.AutoRoundedCorners = True
+        GbtnFS.BackColor = Color.Transparent
+        GbtnFS.BorderRadius = 18
         GbtnFS.CustomBorderThickness = New Padding(32, 0, 0, 0)
         GbtnFS.CustomizableEdges = CustomizableEdges9
         GbtnFS.DisabledState.BorderColor = Color.DarkGray
         GbtnFS.DisabledState.CustomBorderColor = Color.DarkGray
         GbtnFS.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
         GbtnFS.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
-        GbtnFS.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        GbtnFS.FillColor = SystemColors.ControlDarkDark
+        GbtnFS.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point)
         GbtnFS.ForeColor = Color.White
-        GbtnFS.Location = New Point(1057, 50)
+        GbtnFS.Location = New Point(1024, 161)
         GbtnFS.Margin = New Padding(4, 5, 4, 5)
         GbtnFS.Name = "GbtnFS"
         GbtnFS.ShadowDecoration.CustomizableEdges = CustomizableEdges10
@@ -358,16 +373,19 @@ Partial Class SelectionOfUser
         ' 
         ' BtnSrch
         ' 
-        BtnSrch.BorderRadius = 10
+        BtnSrch.AutoRoundedCorners = True
+        BtnSrch.BackColor = Color.Transparent
+        BtnSrch.BorderRadius = 18
         BtnSrch.CustomBorderThickness = New Padding(32, 0, 0, 0)
         BtnSrch.CustomizableEdges = CustomizableEdges11
         BtnSrch.DisabledState.BorderColor = Color.DarkGray
         BtnSrch.DisabledState.CustomBorderColor = Color.DarkGray
         BtnSrch.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
         BtnSrch.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
-        BtnSrch.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        BtnSrch.FillColor = SystemColors.ControlDarkDark
+        BtnSrch.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point)
         BtnSrch.ForeColor = Color.White
-        BtnSrch.Location = New Point(21, 185)
+        BtnSrch.Location = New Point(34, 142)
         BtnSrch.Margin = New Padding(4, 5, 4, 5)
         BtnSrch.Name = "BtnSrch"
         BtnSrch.ShadowDecoration.CustomizableEdges = CustomizableEdges12
@@ -377,6 +395,9 @@ Partial Class SelectionOfUser
         ' 
         ' Guna2TextBox1
         ' 
+        Guna2TextBox1.AutoRoundedCorners = True
+        Guna2TextBox1.BackColor = Color.Transparent
+        Guna2TextBox1.BorderRadius = 29
         Guna2TextBox1.CustomizableEdges = CustomizableEdges13
         Guna2TextBox1.DefaultText = ""
         Guna2TextBox1.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
@@ -386,7 +407,7 @@ Partial Class SelectionOfUser
         Guna2TextBox1.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
         Guna2TextBox1.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
         Guna2TextBox1.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        Guna2TextBox1.Location = New Point(21, 115)
+        Guna2TextBox1.Location = New Point(34, 72)
         Guna2TextBox1.Margin = New Padding(4, 5, 4, 5)
         Guna2TextBox1.Name = "Guna2TextBox1"
         Guna2TextBox1.PasswordChar = ChrW(0)
@@ -400,6 +421,7 @@ Partial Class SelectionOfUser
         ' 
         DataGridViewCellStyle1.BackColor = Color.White
         Guna2DataGridView1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        Guna2DataGridView1.BackgroundColor = Color.Gainsboro
         DataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle2.BackColor = Color.FromArgb(CByte(100), CByte(88), CByte(255))
         DataGridViewCellStyle2.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
@@ -419,20 +441,20 @@ Partial Class SelectionOfUser
         DataGridViewCellStyle3.WrapMode = DataGridViewTriState.False
         Guna2DataGridView1.DefaultCellStyle = DataGridViewCellStyle3
         Guna2DataGridView1.GridColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
-        Guna2DataGridView1.Location = New Point(9, 397)
+        Guna2DataGridView1.Location = New Point(34, 432)
         Guna2DataGridView1.Margin = New Padding(4, 5, 4, 5)
         Guna2DataGridView1.Name = "Guna2DataGridView1"
         Guna2DataGridView1.RowHeadersVisible = False
         Guna2DataGridView1.RowHeadersWidth = 62
         Guna2DataGridView1.RowTemplate.Height = 25
-        Guna2DataGridView1.Size = New Size(1274, 312)
+        Guna2DataGridView1.Size = New Size(1227, 312)
         Guna2DataGridView1.TabIndex = 13
         Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White
         Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = Nothing
         Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = Color.Empty
         Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = Color.Empty
         Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = Color.Empty
-        Guna2DataGridView1.ThemeStyle.BackColor = Color.White
+        Guna2DataGridView1.ThemeStyle.BackColor = Color.Gainsboro
         Guna2DataGridView1.ThemeStyle.GridColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
         Guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = Color.FromArgb(CByte(100), CByte(88), CByte(255))
         Guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = DataGridViewHeaderBorderStyle.None
@@ -452,21 +474,24 @@ Partial Class SelectionOfUser
         ' Label5
         ' 
         Label5.AutoSize = True
-        Label5.Font = New Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point)
-        Label5.Location = New Point(754, 68)
+        Label5.BackColor = Color.Transparent
+        Label5.Font = New Font("Forte", 10F, FontStyle.Bold, GraphicsUnit.Point)
+        Label5.ForeColor = Color.RosyBrown
+        Label5.Location = New Point(754, 45)
         Label5.Margin = New Padding(4, 0, 4, 0)
         Label5.Name = "Label5"
-        Label5.Size = New Size(48, 28)
+        Label5.Size = New Size(54, 22)
         Label5.TabIndex = 10
         Label5.Text = "Year"
         Label5.Visible = False
         ' 
         ' ListBox2
         ' 
+        ListBox2.BackColor = Color.Gainsboro
         ListBox2.FormattingEnabled = True
         ListBox2.ItemHeight = 25
         ListBox2.Items.AddRange(New Object() {"1996", "1995", "1994", "1993", "1992", "1988", "1977", "1976", "1967", "1965", "1964"})
-        ListBox2.Location = New Point(754, 105)
+        ListBox2.Location = New Point(754, 72)
         ListBox2.Margin = New Padding(4, 5, 4, 5)
         ListBox2.Name = "ListBox2"
         ListBox2.Size = New Size(215, 279)
@@ -475,6 +500,7 @@ Partial Class SelectionOfUser
         ' Label4
         ' 
         Label4.AutoSize = True
+        Label4.BackColor = Color.Transparent
         Label4.Font = New Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point)
         Label4.Location = New Point(21, 72)
         Label4.Margin = New Padding(4, 0, 4, 0)
@@ -486,20 +512,23 @@ Partial Class SelectionOfUser
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Font = New Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point)
-        Label1.Location = New Point(354, 68)
+        Label1.BackColor = Color.Transparent
+        Label1.Font = New Font("Forte", 10F, FontStyle.Bold, GraphicsUnit.Point)
+        Label1.ForeColor = Color.RosyBrown
+        Label1.Location = New Point(390, 45)
         Label1.Margin = New Padding(4, 0, 4, 0)
         Label1.Name = "Label1"
-        Label1.Size = New Size(64, 28)
+        Label1.Size = New Size(62, 22)
         Label1.TabIndex = 7
         Label1.Text = "Genre"
         ' 
         ' ListBox1
         ' 
+        ListBox1.BackColor = Color.Gainsboro
         ListBox1.FormattingEnabled = True
         ListBox1.ItemHeight = 25
         ListBox1.Items.AddRange(New Object() {"Action", "Adventure", "Animation", "Children", "Comedy", "Crime", "Documentary", "Drama", "Fantasy", "Horror", "Musical", "Mystery", "Romance", "Sci-Fi", "Thriller", "War", "Western"})
-        ListBox1.Location = New Point(354, 105)
+        ListBox1.Location = New Point(390, 72)
         ListBox1.Margin = New Padding(4, 5, 4, 5)
         ListBox1.Name = "ListBox1"
         ListBox1.Size = New Size(300, 279)
@@ -508,11 +537,13 @@ Partial Class SelectionOfUser
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Font = New Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
-        Label2.Location = New Point(21, 20)
+        Label2.BackColor = Color.Transparent
+        Label2.Font = New Font("Forte", 15F, FontStyle.Bold, GraphicsUnit.Point)
+        Label2.ForeColor = Color.RosyBrown
+        Label2.Location = New Point(34, 23)
         Label2.Margin = New Padding(4, 0, 4, 0)
         Label2.Name = "Label2"
-        Label2.Size = New Size(113, 40)
+        Label2.Size = New Size(112, 32)
         Label2.TabIndex = 1
         Label2.Text = "Browse"
         ' 
