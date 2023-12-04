@@ -23,11 +23,13 @@ Partial Class SelectionOfUser
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         components = New ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(SelectionOfUser))
+        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(SelectionOfUser))
         Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges3 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges4 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges5 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges6 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges7 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges8 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges9 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
@@ -39,8 +41,6 @@ Partial Class SelectionOfUser
         Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As DataGridViewCellStyle = New DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim CustomizableEdges5 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges6 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Guna2BorderlessForm1 = New Guna.UI2.WinForms.Guna2BorderlessForm(components)
         Guna2ShadowPanel1 = New Guna.UI2.WinForms.Guna2ShadowPanel()
         Guna2ControlBox2 = New Guna.UI2.WinForms.Guna2ControlBox()
@@ -48,6 +48,7 @@ Partial Class SelectionOfUser
         Guna2DragControl1 = New Guna.UI2.WinForms.Guna2DragControl(components)
         Guna2ContextMenuStrip1 = New Guna.UI2.WinForms.Guna2ContextMenuStrip()
         Panel1 = New Panel()
+        BtnWtchlst = New Button()
         BtnProfile = New Button()
         Button3 = New Button()
         Button2 = New Button()
@@ -57,6 +58,7 @@ Partial Class SelectionOfUser
         homeTab = New TabPage()
         Label3 = New Label()
         exploreTab = New TabPage()
+        Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
         Guna2Button3 = New Guna.UI2.WinForms.Guna2Button()
         GbtnFS = New Guna.UI2.WinForms.Guna2Button()
         BtnSrch = New Guna.UI2.WinForms.Guna2Button()
@@ -79,8 +81,6 @@ Partial Class SelectionOfUser
         TextBox2 = New TextBox()
         Watchlist = New TabPage()
         Guna2ContextMenuStrip2 = New Guna.UI2.WinForms.Guna2ContextMenuStrip()
-        Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
-        BtnWtchlst = New Button()
         Guna2ShadowPanel1.SuspendLayout()
         Panel1.SuspendLayout()
         TabWatchlist.SuspendLayout()
@@ -105,11 +105,12 @@ Partial Class SelectionOfUser
         Guna2ShadowPanel1.Dock = DockStyle.Top
         Guna2ShadowPanel1.FillColor = Color.Transparent
         Guna2ShadowPanel1.Location = New Point(0, 0)
+        Guna2ShadowPanel1.Margin = New Padding(4, 5, 4, 5)
         Guna2ShadowPanel1.Name = "Guna2ShadowPanel1"
         Guna2ShadowPanel1.ShadowColor = Color.FromArgb(CByte(33), CByte(42), CByte(57))
         Guna2ShadowPanel1.ShadowDepth = 70
         Guna2ShadowPanel1.ShadowShift = 100
-        Guna2ShadowPanel1.Size = New Size(1031, 31)
+        Guna2ShadowPanel1.Size = New Size(1473, 52)
         Guna2ShadowPanel1.TabIndex = 4
         ' 
         ' Guna2ControlBox2
@@ -119,10 +120,11 @@ Partial Class SelectionOfUser
         Guna2ControlBox2.CustomizableEdges = CustomizableEdges1
         Guna2ControlBox2.FillColor = Color.Transparent
         Guna2ControlBox2.IconColor = Color.DimGray
-        Guna2ControlBox2.Location = New Point(974, 3)
+        Guna2ControlBox2.Location = New Point(1391, 5)
+        Guna2ControlBox2.Margin = New Padding(4, 5, 4, 5)
         Guna2ControlBox2.Name = "Guna2ControlBox2"
         Guna2ControlBox2.ShadowDecoration.CustomizableEdges = CustomizableEdges2
-        Guna2ControlBox2.Size = New Size(24, 24)
+        Guna2ControlBox2.Size = New Size(34, 40)
         Guna2ControlBox2.TabIndex = 10
         ' 
         ' Guna2ControlBox1
@@ -131,10 +133,11 @@ Partial Class SelectionOfUser
         Guna2ControlBox1.CustomizableEdges = CustomizableEdges3
         Guna2ControlBox1.FillColor = Color.Transparent
         Guna2ControlBox1.IconColor = Color.DimGray
-        Guna2ControlBox1.Location = New Point(1004, 3)
+        Guna2ControlBox1.Location = New Point(1434, 5)
+        Guna2ControlBox1.Margin = New Padding(4, 5, 4, 5)
         Guna2ControlBox1.Name = "Guna2ControlBox1"
         Guna2ControlBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges4
-        Guna2ControlBox1.Size = New Size(24, 24)
+        Guna2ControlBox1.Size = New Size(34, 40)
         Guna2ControlBox1.TabIndex = 9
         ' 
         ' Guna2DragControl1
@@ -145,6 +148,7 @@ Partial Class SelectionOfUser
         ' 
         ' Guna2ContextMenuStrip1
         ' 
+        Guna2ContextMenuStrip1.ImageScalingSize = New Size(24, 24)
         Guna2ContextMenuStrip1.Name = "Guna2ContextMenuStrip1"
         Guna2ContextMenuStrip1.RenderStyle.ArrowColor = Color.FromArgb(CByte(151), CByte(143), CByte(255))
         Guna2ContextMenuStrip1.RenderStyle.BorderColor = Color.Gainsboro
@@ -167,17 +171,31 @@ Partial Class SelectionOfUser
         Panel1.Controls.Add(Button1)
         Panel1.Controls.Add(Panel2)
         Panel1.Dock = DockStyle.Left
-        Panel1.Location = New Point(0, 31)
+        Panel1.Location = New Point(0, 52)
+        Panel1.Margin = New Padding(4, 5, 4, 5)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(115, 519)
+        Panel1.Size = New Size(164, 865)
         Panel1.TabIndex = 5
+        ' 
+        ' BtnWtchlst
+        ' 
+        BtnWtchlst.Font = New Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
+        BtnWtchlst.Location = New Point(0, 233)
+        BtnWtchlst.Margin = New Padding(4, 5, 4, 5)
+        BtnWtchlst.Name = "BtnWtchlst"
+        BtnWtchlst.Size = New Size(159, 102)
+        BtnWtchlst.TabIndex = 13
+        BtnWtchlst.Text = "Watchlist"
+        BtnWtchlst.UseVisualStyleBackColor = True
+        BtnWtchlst.Visible = False
         ' 
         ' BtnProfile
         ' 
         BtnProfile.Font = New Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
-        BtnProfile.Location = New Point(1, 391)
+        BtnProfile.Location = New Point(1, 652)
+        BtnProfile.Margin = New Padding(4, 5, 4, 5)
         BtnProfile.Name = "BtnProfile"
-        BtnProfile.Size = New Size(111, 61)
+        BtnProfile.Size = New Size(159, 102)
         BtnProfile.TabIndex = 12
         BtnProfile.Text = "PROFILE"
         BtnProfile.UseVisualStyleBackColor = True
@@ -186,9 +204,10 @@ Partial Class SelectionOfUser
         ' 
         Button3.BackColor = Color.RosyBrown
         Button3.Font = New Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
-        Button3.Location = New Point(0, 458)
+        Button3.Location = New Point(0, 763)
+        Button3.Margin = New Padding(4, 5, 4, 5)
         Button3.Name = "Button3"
-        Button3.Size = New Size(111, 61)
+        Button3.Size = New Size(159, 102)
         Button3.TabIndex = 11
         Button3.Text = "LOG OUT"
         Button3.UseVisualStyleBackColor = False
@@ -196,9 +215,10 @@ Partial Class SelectionOfUser
         ' Button2
         ' 
         Button2.Font = New Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
-        Button2.Location = New Point(0, 73)
+        Button2.Location = New Point(0, 122)
+        Button2.Margin = New Padding(4, 5, 4, 5)
         Button2.Name = "Button2"
-        Button2.Size = New Size(111, 61)
+        Button2.Size = New Size(159, 102)
         Button2.TabIndex = 10
         Button2.Text = "BROWSE"
         Button2.UseVisualStyleBackColor = True
@@ -206,18 +226,20 @@ Partial Class SelectionOfUser
         ' Button1
         ' 
         Button1.Font = New Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
-        Button1.Location = New Point(0, 6)
+        Button1.Location = New Point(0, 10)
+        Button1.Margin = New Padding(4, 5, 4, 5)
         Button1.Name = "Button1"
-        Button1.Size = New Size(111, 61)
+        Button1.Size = New Size(159, 102)
         Button1.TabIndex = 9
         Button1.Text = "HOME"
         Button1.UseVisualStyleBackColor = True
         ' 
         ' Panel2
         ' 
-        Panel2.Location = New Point(206, 0)
+        Panel2.Location = New Point(294, 0)
+        Panel2.Margin = New Padding(4, 5, 4, 5)
         Panel2.Name = "Panel2"
-        Panel2.Size = New Size(822, 519)
+        Panel2.Size = New Size(1174, 865)
         Panel2.TabIndex = 6
         ' 
         ' TabWatchlist
@@ -226,20 +248,22 @@ Partial Class SelectionOfUser
         TabWatchlist.Controls.Add(exploreTab)
         TabWatchlist.Controls.Add(TabProfile)
         TabWatchlist.Controls.Add(Watchlist)
-        TabWatchlist.Location = New Point(117, 25)
+        TabWatchlist.Location = New Point(167, 42)
+        TabWatchlist.Margin = New Padding(4, 5, 4, 5)
         TabWatchlist.Name = "TabWatchlist"
         TabWatchlist.SelectedIndex = 0
-        TabWatchlist.Size = New Size(914, 525)
+        TabWatchlist.Size = New Size(1306, 875)
         TabWatchlist.TabIndex = 6
         ' 
         ' homeTab
         ' 
         homeTab.BackColor = SystemColors.AppWorkspace
         homeTab.Controls.Add(Label3)
-        homeTab.Location = New Point(4, 24)
+        homeTab.Location = New Point(4, 34)
+        homeTab.Margin = New Padding(4, 5, 4, 5)
         homeTab.Name = "homeTab"
-        homeTab.Padding = New Padding(3)
-        homeTab.Size = New Size(906, 497)
+        homeTab.Padding = New Padding(4, 5, 4, 5)
+        homeTab.Size = New Size(1298, 837)
         homeTab.TabIndex = 0
         homeTab.Text = "Home"
         ' 
@@ -247,9 +271,10 @@ Partial Class SelectionOfUser
         ' 
         Label3.AutoSize = True
         Label3.Font = New Font("Microsoft New Tai Lue", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Label3.Location = New Point(6, 16)
+        Label3.Location = New Point(9, 27)
+        Label3.Margin = New Padding(4, 0, 4, 0)
         Label3.Name = "Label3"
-        Label3.Size = New Size(116, 21)
+        Label3.Size = New Size(177, 32)
         Label3.TabIndex = 0
         Label3.Text = "Welcome Back!"
         ' 
@@ -268,12 +293,30 @@ Partial Class SelectionOfUser
         exploreTab.Controls.Add(Label1)
         exploreTab.Controls.Add(ListBox1)
         exploreTab.Controls.Add(Label2)
-        exploreTab.Location = New Point(4, 24)
+        exploreTab.Location = New Point(4, 34)
+        exploreTab.Margin = New Padding(4, 5, 4, 5)
         exploreTab.Name = "exploreTab"
-        exploreTab.Padding = New Padding(3)
-        exploreTab.Size = New Size(906, 497)
+        exploreTab.Padding = New Padding(4, 5, 4, 5)
+        exploreTab.Size = New Size(1298, 837)
         exploreTab.TabIndex = 1
         exploreTab.Text = "Explore"
+        ' 
+        ' Guna2Button1
+        ' 
+        Guna2Button1.CustomizableEdges = CustomizableEdges5
+        Guna2Button1.DisabledState.BorderColor = Color.DarkGray
+        Guna2Button1.DisabledState.CustomBorderColor = Color.DarkGray
+        Guna2Button1.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        Guna2Button1.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        Guna2Button1.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        Guna2Button1.ForeColor = Color.White
+        Guna2Button1.Location = New Point(1114, 718)
+        Guna2Button1.Margin = New Padding(4, 5, 4, 5)
+        Guna2Button1.Name = "Guna2Button1"
+        Guna2Button1.ShadowDecoration.CustomizableEdges = CustomizableEdges6
+        Guna2Button1.Size = New Size(156, 72)
+        Guna2Button1.TabIndex = 18
+        Guna2Button1.Text = "Add to Watchlist"
         ' 
         ' Guna2Button3
         ' 
@@ -286,10 +329,11 @@ Partial Class SelectionOfUser
         Guna2Button3.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
         Guna2Button3.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
         Guna2Button3.ForeColor = Color.White
-        Guna2Button3.Location = New Point(711, 92)
+        Guna2Button3.Location = New Point(1016, 153)
+        Guna2Button3.Margin = New Padding(4, 5, 4, 5)
         Guna2Button3.Name = "Guna2Button3"
         Guna2Button3.ShadowDecoration.CustomizableEdges = CustomizableEdges8
-        Guna2Button3.Size = New Size(100, 23)
+        Guna2Button3.Size = New Size(143, 38)
         Guna2Button3.TabIndex = 17
         Guna2Button3.Text = "Clear"
         ' 
@@ -304,10 +348,11 @@ Partial Class SelectionOfUser
         GbtnFS.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
         GbtnFS.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
         GbtnFS.ForeColor = Color.White
-        GbtnFS.Location = New Point(711, 63)
+        GbtnFS.Location = New Point(1057, 50)
+        GbtnFS.Margin = New Padding(4, 5, 4, 5)
         GbtnFS.Name = "GbtnFS"
         GbtnFS.ShadowDecoration.CustomizableEdges = CustomizableEdges10
-        GbtnFS.Size = New Size(100, 23)
+        GbtnFS.Size = New Size(143, 38)
         GbtnFS.TabIndex = 16
         GbtnFS.Text = "Filter Search"
         ' 
@@ -322,10 +367,11 @@ Partial Class SelectionOfUser
         BtnSrch.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
         BtnSrch.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
         BtnSrch.ForeColor = Color.White
-        BtnSrch.Location = New Point(15, 111)
+        BtnSrch.Location = New Point(21, 185)
+        BtnSrch.Margin = New Padding(4, 5, 4, 5)
         BtnSrch.Name = "BtnSrch"
         BtnSrch.ShadowDecoration.CustomizableEdges = CustomizableEdges12
-        BtnSrch.Size = New Size(75, 23)
+        BtnSrch.Size = New Size(107, 38)
         BtnSrch.TabIndex = 15
         BtnSrch.Text = "Search"
         ' 
@@ -340,13 +386,14 @@ Partial Class SelectionOfUser
         Guna2TextBox1.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
         Guna2TextBox1.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
         Guna2TextBox1.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        Guna2TextBox1.Location = New Point(15, 69)
+        Guna2TextBox1.Location = New Point(21, 115)
+        Guna2TextBox1.Margin = New Padding(4, 5, 4, 5)
         Guna2TextBox1.Name = "Guna2TextBox1"
         Guna2TextBox1.PasswordChar = ChrW(0)
         Guna2TextBox1.PlaceholderText = ""
         Guna2TextBox1.SelectedText = ""
         Guna2TextBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges14
-        Guna2TextBox1.Size = New Size(200, 36)
+        Guna2TextBox1.Size = New Size(286, 60)
         Guna2TextBox1.TabIndex = 14
         ' 
         ' Guna2DataGridView1
@@ -372,11 +419,13 @@ Partial Class SelectionOfUser
         DataGridViewCellStyle3.WrapMode = DataGridViewTriState.False
         Guna2DataGridView1.DefaultCellStyle = DataGridViewCellStyle3
         Guna2DataGridView1.GridColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
-        Guna2DataGridView1.Location = New Point(6, 238)
+        Guna2DataGridView1.Location = New Point(9, 397)
+        Guna2DataGridView1.Margin = New Padding(4, 5, 4, 5)
         Guna2DataGridView1.Name = "Guna2DataGridView1"
         Guna2DataGridView1.RowHeadersVisible = False
+        Guna2DataGridView1.RowHeadersWidth = 62
         Guna2DataGridView1.RowTemplate.Height = 25
-        Guna2DataGridView1.Size = New Size(892, 187)
+        Guna2DataGridView1.Size = New Size(1274, 312)
         Guna2DataGridView1.TabIndex = 13
         Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White
         Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = Nothing
@@ -404,9 +453,10 @@ Partial Class SelectionOfUser
         ' 
         Label5.AutoSize = True
         Label5.Font = New Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point)
-        Label5.Location = New Point(528, 41)
+        Label5.Location = New Point(754, 68)
+        Label5.Margin = New Padding(4, 0, 4, 0)
         Label5.Name = "Label5"
-        Label5.Size = New Size(35, 19)
+        Label5.Size = New Size(48, 28)
         Label5.TabIndex = 10
         Label5.Text = "Year"
         Label5.Visible = False
@@ -414,20 +464,22 @@ Partial Class SelectionOfUser
         ' ListBox2
         ' 
         ListBox2.FormattingEnabled = True
-        ListBox2.ItemHeight = 15
+        ListBox2.ItemHeight = 25
         ListBox2.Items.AddRange(New Object() {"1996", "1995", "1994", "1993", "1992", "1988", "1977", "1976", "1967", "1965", "1964"})
-        ListBox2.Location = New Point(528, 63)
+        ListBox2.Location = New Point(754, 105)
+        ListBox2.Margin = New Padding(4, 5, 4, 5)
         ListBox2.Name = "ListBox2"
-        ListBox2.Size = New Size(152, 169)
+        ListBox2.Size = New Size(215, 279)
         ListBox2.TabIndex = 9
         ' 
         ' Label4
         ' 
         Label4.AutoSize = True
         Label4.Font = New Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point)
-        Label4.Location = New Point(15, 43)
+        Label4.Location = New Point(21, 72)
+        Label4.Margin = New Padding(4, 0, 4, 0)
         Label4.Name = "Label4"
-        Label4.Size = New Size(49, 19)
+        Label4.Size = New Size(70, 28)
         Label4.TabIndex = 8
         Label4.Text = "Search"
         ' 
@@ -435,29 +487,32 @@ Partial Class SelectionOfUser
         ' 
         Label1.AutoSize = True
         Label1.Font = New Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point)
-        Label1.Location = New Point(248, 41)
+        Label1.Location = New Point(354, 68)
+        Label1.Margin = New Padding(4, 0, 4, 0)
         Label1.Name = "Label1"
-        Label1.Size = New Size(46, 19)
+        Label1.Size = New Size(64, 28)
         Label1.TabIndex = 7
         Label1.Text = "Genre"
         ' 
         ' ListBox1
         ' 
         ListBox1.FormattingEnabled = True
-        ListBox1.ItemHeight = 15
+        ListBox1.ItemHeight = 25
         ListBox1.Items.AddRange(New Object() {"Action", "Adventure", "Animation", "Children", "Comedy", "Crime", "Documentary", "Drama", "Fantasy", "Horror", "Musical", "Mystery", "Romance", "Sci-Fi", "Thriller", "War", "Western"})
-        ListBox1.Location = New Point(248, 63)
+        ListBox1.Location = New Point(354, 105)
+        ListBox1.Margin = New Padding(4, 5, 4, 5)
         ListBox1.Name = "ListBox1"
-        ListBox1.Size = New Size(211, 169)
+        ListBox1.Size = New Size(300, 279)
         ListBox1.TabIndex = 6
         ' 
         ' Label2
         ' 
         Label2.AutoSize = True
         Label2.Font = New Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
-        Label2.Location = New Point(15, 12)
+        Label2.Location = New Point(21, 20)
+        Label2.Margin = New Padding(4, 0, 4, 0)
         Label2.Name = "Label2"
-        Label2.Size = New Size(73, 25)
+        Label2.Size = New Size(113, 40)
         Label2.TabIndex = 1
         Label2.Text = "Browse"
         ' 
@@ -472,89 +527,100 @@ Partial Class SelectionOfUser
         TabProfile.Controls.Add(TextBox3)
         TabProfile.Controls.Add(Label6)
         TabProfile.Controls.Add(TextBox2)
-        TabProfile.Location = New Point(4, 24)
+        TabProfile.Location = New Point(4, 34)
+        TabProfile.Margin = New Padding(4, 5, 4, 5)
         TabProfile.Name = "TabProfile"
-        TabProfile.Padding = New Padding(3)
-        TabProfile.Size = New Size(906, 497)
+        TabProfile.Padding = New Padding(4, 5, 4, 5)
+        TabProfile.Size = New Size(1298, 837)
         TabProfile.TabIndex = 2
         TabProfile.Text = "TabProfile"
         ' 
         ' Label9
         ' 
         Label9.AutoSize = True
-        Label9.Location = New Point(189, 125)
+        Label9.Location = New Point(270, 208)
+        Label9.Margin = New Padding(4, 0, 4, 0)
         Label9.Name = "Label9"
-        Label9.Size = New Size(41, 15)
+        Label9.Size = New Size(63, 25)
         Label9.TabIndex = 7
         Label9.Text = "Label9"
         ' 
         ' TextBox5
         ' 
-        TextBox5.Location = New Point(189, 143)
+        TextBox5.Location = New Point(270, 238)
+        TextBox5.Margin = New Padding(4, 5, 4, 5)
         TextBox5.Name = "TextBox5"
-        TextBox5.Size = New Size(100, 23)
+        TextBox5.Size = New Size(141, 31)
         TextBox5.TabIndex = 6
         ' 
         ' Label8
         ' 
         Label8.AutoSize = True
-        Label8.Location = New Point(189, 63)
+        Label8.Location = New Point(270, 105)
+        Label8.Margin = New Padding(4, 0, 4, 0)
         Label8.Name = "Label8"
-        Label8.Size = New Size(41, 15)
+        Label8.Size = New Size(63, 25)
         Label8.TabIndex = 5
         Label8.Text = "Label8"
         ' 
         ' TextBox4
         ' 
-        TextBox4.Location = New Point(189, 81)
+        TextBox4.Location = New Point(270, 135)
+        TextBox4.Margin = New Padding(4, 5, 4, 5)
         TextBox4.Name = "TextBox4"
-        TextBox4.Size = New Size(100, 23)
+        TextBox4.Size = New Size(141, 31)
         TextBox4.TabIndex = 4
         ' 
         ' Label7
         ' 
         Label7.AutoSize = True
-        Label7.Location = New Point(31, 125)
+        Label7.Location = New Point(44, 208)
+        Label7.Margin = New Padding(4, 0, 4, 0)
         Label7.Name = "Label7"
-        Label7.Size = New Size(41, 15)
+        Label7.Size = New Size(63, 25)
         Label7.TabIndex = 3
         Label7.Text = "Label7"
         ' 
         ' TextBox3
         ' 
-        TextBox3.Location = New Point(31, 143)
+        TextBox3.Location = New Point(44, 238)
+        TextBox3.Margin = New Padding(4, 5, 4, 5)
         TextBox3.Name = "TextBox3"
-        TextBox3.Size = New Size(100, 23)
+        TextBox3.Size = New Size(141, 31)
         TextBox3.TabIndex = 2
         ' 
         ' Label6
         ' 
         Label6.AutoSize = True
-        Label6.Location = New Point(31, 63)
+        Label6.Location = New Point(44, 105)
+        Label6.Margin = New Padding(4, 0, 4, 0)
         Label6.Name = "Label6"
-        Label6.Size = New Size(41, 15)
+        Label6.Size = New Size(63, 25)
         Label6.TabIndex = 1
         Label6.Text = "Label6"
         ' 
         ' TextBox2
         ' 
-        TextBox2.Location = New Point(31, 81)
+        TextBox2.Location = New Point(44, 135)
+        TextBox2.Margin = New Padding(4, 5, 4, 5)
         TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(100, 23)
+        TextBox2.Size = New Size(141, 31)
         TextBox2.TabIndex = 0
         ' 
         ' Watchlist
         ' 
-        Watchlist.Location = New Point(4, 24)
+        Watchlist.Location = New Point(4, 34)
+        Watchlist.Margin = New Padding(4, 5, 4, 5)
         Watchlist.Name = "Watchlist"
-        Watchlist.Padding = New Padding(3)
-        Watchlist.Size = New Size(906, 497)
+        Watchlist.Padding = New Padding(4, 5, 4, 5)
+        Watchlist.Size = New Size(1298, 837)
         Watchlist.TabIndex = 3
         Watchlist.Text = "TabPage1"
         Watchlist.UseVisualStyleBackColor = True
         ' 
         ' Guna2ContextMenuStrip2
         ' 
+        Guna2ContextMenuStrip2.ImageScalingSize = New Size(24, 24)
         Guna2ContextMenuStrip2.Name = "Guna2ContextMenuStrip2"
         Guna2ContextMenuStrip2.RenderStyle.ArrowColor = Color.FromArgb(CByte(151), CByte(143), CByte(255))
         Guna2ContextMenuStrip2.RenderStyle.BorderColor = Color.Gainsboro
@@ -567,42 +633,16 @@ Partial Class SelectionOfUser
         Guna2ContextMenuStrip2.RenderStyle.TextRenderingHint = Drawing.Text.TextRenderingHint.SystemDefault
         Guna2ContextMenuStrip2.Size = New Size(61, 4)
         ' 
-        ' Guna2Button1
-        ' 
-        Guna2Button1.CustomizableEdges = CustomizableEdges5
-        Guna2Button1.DisabledState.BorderColor = Color.DarkGray
-        Guna2Button1.DisabledState.CustomBorderColor = Color.DarkGray
-        Guna2Button1.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        Guna2Button1.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
-        Guna2Button1.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
-        Guna2Button1.ForeColor = Color.White
-        Guna2Button1.Location = New Point(780, 431)
-        Guna2Button1.Name = "Guna2Button1"
-        Guna2Button1.ShadowDecoration.CustomizableEdges = CustomizableEdges6
-        Guna2Button1.Size = New Size(109, 43)
-        Guna2Button1.TabIndex = 18
-        Guna2Button1.Text = "Add to Watchlist"
-        ' 
-        ' BtnWtchlst
-        ' 
-        BtnWtchlst.Font = New Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
-        BtnWtchlst.Location = New Point(0, 140)
-        BtnWtchlst.Name = "BtnWtchlst"
-        BtnWtchlst.Size = New Size(111, 61)
-        BtnWtchlst.TabIndex = 13
-        BtnWtchlst.Text = "Watchlist"
-        BtnWtchlst.UseVisualStyleBackColor = True
-        BtnWtchlst.Visible = False
-        ' 
         ' SelectionOfUser
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(1031, 550)
+        ClientSize = New Size(1473, 917)
         Controls.Add(Panel1)
         Controls.Add(Guna2ShadowPanel1)
         Controls.Add(TabWatchlist)
         FormBorderStyle = FormBorderStyle.None
+        Margin = New Padding(4, 5, 4, 5)
         Name = "SelectionOfUser"
         Text = "SelectionOfUser"
         Guna2ShadowPanel1.ResumeLayout(False)
