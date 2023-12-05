@@ -2,6 +2,8 @@
 Imports Guna.UI2.WinForms
 Imports MySql.Data.MySqlClient
 Imports Mysqlx
+Imports System.Data
+Imports System.Windows.Forms
 
 
 Public Class SelectionOfUser
@@ -20,7 +22,7 @@ Public Class SelectionOfUser
     End Sub
 
     'Side Menu Buttons
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click, Button2.Click, BtnProfile.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click, Button2.Click, BtnProfile.Click, BtnWtchlst.Click
         Try
             Dim MyButton = DirectCast(sender, Button)
 
@@ -31,6 +33,8 @@ Public Class SelectionOfUser
                     TabWatchlist.SelectedTab = exploreTab
                 Case "BtnProfile"
                     TabWatchlist.SelectedTab = TabProfile
+                Case "BtnWtchlst"
+                    TabWatchlist.SelectedTab = Watchlist
             End Select
         Catch ex As Exception
 
@@ -99,17 +103,17 @@ Public Class SelectionOfUser
 
     Private Sub DisplayMoviesByGenreAndSelectedYear(selectedGenre As String, selectedYear As String)
 
-        Dim query As String = "SELECT * FROM tblmovie WHERE genre LIKE @selectedGenre AND year LIKE @selectedYear"
+        Dim query As String = "SELECT title, genre, year FROM tblmovie WHERE genre LIKE @selectedGenre AND year LIKE @selectedYear"
         DisplayMovies(query, "%" & selectedGenre & "%", selectedYear)
     End Sub
 
     Private Sub DisplayMoviesByGenre(selectedGenre As String)
-        Dim query As String = "SELECT * FROM tblmovie WHERE genre LIKE @selectedGenre"
+        Dim query As String = "SELECT title, genre, year FROM tblmovie WHERE genre LIKE @selectedGenre"
         DisplayMovies(query, "%" & selectedGenre & "%")
     End Sub
 
     Private Sub DisplayMoviesByReleaseDate(selectedYear As String)
-        Dim query As String = "SELECT * FROM tblmovie WHERE year LIKE " & selectedYear
+        Dim query As String = "SELECT title, genre, year FROM tblmovie WHERE year LIKE " & selectedYear
         DisplayMovies(query, "%" & selectedYear & "%")
     End Sub
 
@@ -144,5 +148,46 @@ Public Class SelectionOfUser
         ListBox2.ClearSelected()
     End Sub
 
+    '===================================== WORK IN PROGRESS =============================================='
+
+
+    ' Your MySQL connection string
+    Private connectionString As String = "your_connection_string_here"
+
+    Private Sub BtnAddtoW_Click(sender As Object, e As EventArgs) Handles BtnAddtoW.Click
+        ' Check if any rows are selected
+        If Guna2DataGridView1.SelectedRows.Count > 0 Then
+            ' Get selected movie IDs
+            Dim selectedMovieIds As New List(Of Integer)()
+
+            For Each row As DataGridViewRow In Guna2DataGridView1.SelectedRows
+                Dim movieId As Integer = Convert.ToInt32(row.Cells("movieId").Value) ' Replace "MovieID" with your actual column name
+                selectedMovieIds.Add(movieId)
+            Next
+
+            ' Insert selected movies into the watchlist table in MySQL
+            InsertMoviesIntoWatchlist(selectedMovieIds)
+        Else
+            MessageBox.Show("Please select at least one movie to add to the watchlist.")
+        End If
+    End Sub
+
+    Private Sub InsertMoviesIntoWatchlist(movieIds As List(Of Integer))
+            Using connection As New MySqlConnection(connectionString)
+                connection.Open()
+
+                For Each movieId As Integer In movieIds
+                ' Adjust the SQL query based on your database schema
+                Dim query As String = "INSERT INTO watchlist (movieID) VALUES (@movieID)"
+
+                Using command As New MySqlCommand(query, connection)
+                        command.Parameters.AddWithValue("@MovieID", movieId)
+                        command.ExecuteNonQuery()
+                    End Using
+                Next
+
+                MessageBox.Show("Selected movies added to the watchlist successfully.")
+            End Using
+        End Sub
 
 End Class

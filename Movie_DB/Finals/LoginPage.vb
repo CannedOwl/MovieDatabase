@@ -2,18 +2,19 @@
 Imports MySql.Data.MySqlClient
 Imports Mysqlx
 Public Class LoginPage
+    Private Sub txtbxpassword_TextChanged(sender As Object, e As EventArgs) Handles txtbxpassword.TextChanged
+        txtbxpassword.PasswordChar = "●"
+    End Sub
 
     Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox1.CheckedChanged
-        If TxtBxPass.UseSystemPasswordChar = True Then
-
-            ' Hide pass '
-            TxtBxPass.UseSystemPasswordChar = False
-
+        If CheckBox1.Checked Then
+            ' If the checkbox is checked, show the password
+            txtbxpassword.PasswordChar = ControlChars.NullChar ' Set to null to show actual characters
         Else
-            ' Show pass '
-            TxtBxPass.UseSystemPasswordChar = True
-
+            ' If the checkbox is unchecked, hide the password
+            txtbxpassword.PasswordChar = "●"
         End If
+
     End Sub
 
     Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles Guna2Button1.Click
@@ -21,12 +22,12 @@ Public Class LoginPage
     End Sub
 
 
-
+    'Login Function'
     Sub login()
         Dim myConnectionx As MySqlConnection
         Dim myCommandx As MySqlCommand
         Dim username As String = userTxtbx.Text
-        Dim password As String = TxtBxPass.Text
+        Dim password As String = txtbxpassword.Text
         myConnectionx = Common.getDBConnectionX()
 
         myConnectionx.Open()
@@ -57,4 +58,6 @@ Public Class LoginPage
         ' Show Form2
         register.Show()
     End Sub
+
+
 End Class
