@@ -173,21 +173,31 @@ Public Class SelectionOfUser
     End Sub
 
     Private Sub InsertMoviesIntoWatchlist(movieIds As List(Of Integer))
-            Using connection As New MySqlConnection(connectionString)
-                connection.Open()
+        Using connection As New MySqlConnection(connectionString)
+            connection.Open()
 
-                For Each movieId As Integer In movieIds
+            For Each movieId As Integer In movieIds
                 ' Adjust the SQL query based on your database schema
                 Dim query As String = "INSERT INTO watchlist (movieID) VALUES (@movieID)"
 
                 Using command As New MySqlCommand(query, connection)
-                        command.Parameters.AddWithValue("@MovieID", movieId)
-                        command.ExecuteNonQuery()
-                    End Using
-                Next
+                    command.Parameters.AddWithValue("@MovieID", movieId)
+                    command.ExecuteNonQuery()
+                End Using
+            Next
 
-                MessageBox.Show("Selected movies added to the watchlist successfully.")
-            End Using
-        End Sub
+            MessageBox.Show("Selected movies added to the watchlist successfully.")
+        End Using
+    End Sub
 
+    Private Sub Form1_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
+        ' Display a message box asking for confirmation
+        Dim result As DialogResult = MessageBox.Show("Do you really want to close the application?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+
+        ' Check the user's choice
+        If result = DialogResult.No Then
+            ' If the user clicks No, cancel the form closing event
+            e.Cancel = True
+        End If
+    End Sub
 End Class

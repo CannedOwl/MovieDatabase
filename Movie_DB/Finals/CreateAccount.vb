@@ -26,4 +26,8 @@ Public Class CreateAccount
         End If
 
     End Sub
+
+    Private Sub newUser_TextChanged(sender As Object, e As EventArgs) Handles newUser.TextChanged
+
+    End Sub
 End Class

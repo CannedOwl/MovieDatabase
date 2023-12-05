@@ -35,7 +35,7 @@ Partial Class CreateAccount
         Dim CustomizableEdges8 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(CreateAccount))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(CreateAccount))
         Guna2BorderlessForm1 = New Guna.UI2.WinForms.Guna2BorderlessForm(components)
         Guna2ShadowPanel1 = New Guna.UI2.WinForms.Guna2ShadowPanel()
         Guna2ControlBox2 = New Guna.UI2.WinForms.Guna2ControlBox()
@@ -64,12 +64,11 @@ Partial Class CreateAccount
         Guna2ShadowPanel1.Controls.Add(Guna2ControlBox1)
         Guna2ShadowPanel1.FillColor = Color.Transparent
         Guna2ShadowPanel1.Location = New Point(0, 0)
-        Guna2ShadowPanel1.Margin = New Padding(4, 5, 4, 5)
         Guna2ShadowPanel1.Name = "Guna2ShadowPanel1"
         Guna2ShadowPanel1.ShadowColor = Color.Black
         Guna2ShadowPanel1.ShadowDepth = 70
         Guna2ShadowPanel1.ShadowShift = 100
-        Guna2ShadowPanel1.Size = New Size(429, 50)
+        Guna2ShadowPanel1.Size = New Size(300, 30)
         Guna2ShadowPanel1.TabIndex = 0
         ' 
         ' Guna2ControlBox2
@@ -79,11 +78,10 @@ Partial Class CreateAccount
         Guna2ControlBox2.CustomizableEdges = CustomizableEdges9
         Guna2ControlBox2.FillColor = Color.Transparent
         Guna2ControlBox2.IconColor = Color.DimGray
-        Guna2ControlBox2.Location = New Point(347, 5)
-        Guna2ControlBox2.Margin = New Padding(4, 5, 4, 5)
+        Guna2ControlBox2.Location = New Point(243, 3)
         Guna2ControlBox2.Name = "Guna2ControlBox2"
         Guna2ControlBox2.ShadowDecoration.CustomizableEdges = CustomizableEdges10
-        Guna2ControlBox2.Size = New Size(34, 40)
+        Guna2ControlBox2.Size = New Size(24, 24)
         Guna2ControlBox2.TabIndex = 10
         ' 
         ' Guna2ControlBox1
@@ -92,17 +90,16 @@ Partial Class CreateAccount
         Guna2ControlBox1.CustomizableEdges = CustomizableEdges11
         Guna2ControlBox1.FillColor = Color.Transparent
         Guna2ControlBox1.IconColor = Color.DimGray
-        Guna2ControlBox1.Location = New Point(390, 5)
-        Guna2ControlBox1.Margin = New Padding(4, 5, 4, 5)
+        Guna2ControlBox1.Location = New Point(273, 3)
         Guna2ControlBox1.Name = "Guna2ControlBox1"
         Guna2ControlBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges12
-        Guna2ControlBox1.Size = New Size(34, 40)
+        Guna2ControlBox1.Size = New Size(24, 24)
         Guna2ControlBox1.TabIndex = 9
         ' 
         ' Guna2Button1
         ' 
         Guna2Button1.AutoRoundedCorners = True
-        Guna2Button1.BorderRadius = 32
+        Guna2Button1.BorderRadius = 19
         Guna2Button1.CustomizableEdges = CustomizableEdges3
         Guna2Button1.DisabledState.BorderColor = Color.DarkGray
         Guna2Button1.DisabledState.CustomBorderColor = Color.DarkGray
@@ -111,18 +108,17 @@ Partial Class CreateAccount
         Guna2Button1.FillColor = Color.Black
         Guna2Button1.Font = New Font("Bahnschrift", 9F, FontStyle.Bold, GraphicsUnit.Point)
         Guna2Button1.ForeColor = Color.White
-        Guna2Button1.Location = New Point(101, 430)
-        Guna2Button1.Margin = New Padding(4, 5, 4, 5)
+        Guna2Button1.Location = New Point(71, 258)
         Guna2Button1.Name = "Guna2Button1"
         Guna2Button1.ShadowDecoration.CustomizableEdges = CustomizableEdges4
-        Guna2Button1.Size = New Size(241, 67)
+        Guna2Button1.Size = New Size(169, 40)
         Guna2Button1.TabIndex = 1
         Guna2Button1.Text = "CONFIRM"
         ' 
         ' newPass
         ' 
         newPass.AutoRoundedCorners = True
-        newPass.BorderRadius = 30
+        newPass.BorderRadius = 17
         newPass.CustomizableEdges = CustomizableEdges5
         newPass.DefaultText = ""
         newPass.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
@@ -133,21 +129,20 @@ Partial Class CreateAccount
         newPass.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
         newPass.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
         newPass.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        newPass.Location = New Point(103, 267)
-        newPass.Margin = New Padding(4, 5, 4, 5)
+        newPass.Location = New Point(72, 160)
         newPass.Name = "newPass"
         newPass.PasswordChar = ChrW(0)
         newPass.PlaceholderForeColor = Color.Gray
         newPass.PlaceholderText = "password"
         newPass.SelectedText = ""
         newPass.ShadowDecoration.CustomizableEdges = CustomizableEdges6
-        newPass.Size = New Size(241, 62)
+        newPass.Size = New Size(169, 37)
         newPass.TabIndex = 3
         ' 
         ' newEmail
         ' 
         newEmail.AutoRoundedCorners = True
-        newEmail.BorderRadius = 30
+        newEmail.BorderRadius = 17
         newEmail.CustomizableEdges = CustomizableEdges7
         newEmail.DefaultText = ""
         newEmail.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
@@ -158,21 +153,20 @@ Partial Class CreateAccount
         newEmail.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
         newEmail.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
         newEmail.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        newEmail.Location = New Point(103, 197)
-        newEmail.Margin = New Padding(4, 5, 4, 5)
+        newEmail.Location = New Point(72, 118)
         newEmail.Name = "newEmail"
         newEmail.PasswordChar = ChrW(0)
         newEmail.PlaceholderForeColor = Color.Gray
         newEmail.PlaceholderText = "email "
         newEmail.SelectedText = ""
         newEmail.ShadowDecoration.CustomizableEdges = CustomizableEdges8
-        newEmail.Size = New Size(241, 62)
+        newEmail.Size = New Size(169, 37)
         newEmail.TabIndex = 4
         ' 
         ' newUser
         ' 
         newUser.AutoRoundedCorners = True
-        newUser.BorderRadius = 30
+        newUser.BorderRadius = 17
         newUser.CustomizableEdges = CustomizableEdges1
         newUser.DefaultText = ""
         newUser.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
@@ -183,15 +177,14 @@ Partial Class CreateAccount
         newUser.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
         newUser.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
         newUser.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        newUser.Location = New Point(101, 127)
-        newUser.Margin = New Padding(4, 5, 4, 5)
+        newUser.Location = New Point(71, 76)
         newUser.Name = "newUser"
         newUser.PasswordChar = ChrW(0)
         newUser.PlaceholderForeColor = Color.Gray
         newUser.PlaceholderText = "username"
         newUser.SelectedText = ""
         newUser.ShadowDecoration.CustomizableEdges = CustomizableEdges2
-        newUser.Size = New Size(241, 62)
+        newUser.Size = New Size(169, 37)
         newUser.TabIndex = 5
         ' 
         ' Guna2ShadowPanel2
@@ -202,11 +195,10 @@ Partial Class CreateAccount
         Guna2ShadowPanel2.Controls.Add(newPass)
         Guna2ShadowPanel2.Controls.Add(newEmail)
         Guna2ShadowPanel2.FillColor = Color.Transparent
-        Guna2ShadowPanel2.Location = New Point(-9, 48)
-        Guna2ShadowPanel2.Margin = New Padding(4, 5, 4, 5)
+        Guna2ShadowPanel2.Location = New Point(-6, 29)
         Guna2ShadowPanel2.Name = "Guna2ShadowPanel2"
         Guna2ShadowPanel2.ShadowColor = Color.Black
-        Guna2ShadowPanel2.Size = New Size(450, 702)
+        Guna2ShadowPanel2.Size = New Size(315, 421)
         Guna2ShadowPanel2.TabIndex = 8
         ' 
         ' Guna2DragControl1
@@ -217,14 +209,13 @@ Partial Class CreateAccount
         ' 
         ' CreateAccount
         ' 
-        AutoScaleDimensions = New SizeF(10F, 25F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
-        ClientSize = New Size(429, 750)
+        ClientSize = New Size(300, 450)
         Controls.Add(Guna2ShadowPanel2)
         Controls.Add(Guna2ShadowPanel1)
         FormBorderStyle = FormBorderStyle.None
-        Margin = New Padding(4, 5, 4, 5)
         Name = "CreateAccount"
         Text = "CreateAccount"
         Guna2ShadowPanel1.ResumeLayout(False)
