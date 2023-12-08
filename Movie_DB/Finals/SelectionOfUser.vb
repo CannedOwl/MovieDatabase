@@ -7,7 +7,17 @@ Imports System.Windows.Forms
 
 
 Public Class SelectionOfUser
+    'Getting the Values from the LoginPage
+    Private _username As String
 
+    Public Property Username() As String
+        Get
+            Return _username
+        End Get
+        Set(ByVal value As String)
+            _username = value
+        End Set
+    End Property
     Private Sub SelectionOfUser_Load_1(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
             TabWatchlist.Appearance = TabAppearance.FlatButtons
@@ -151,43 +161,65 @@ Public Class SelectionOfUser
     '===================================== WORK IN PROGRESS =============================================='
 
 
-    ' Your MySQL connection string
-    Private connectionString As String = "your_connection_string_here"
 
-    Private Sub BtnAddtoW_Click(sender As Object, e As EventArgs) Handles BtnAddtoW.Click
-        ' Check if any rows are selected
-        If Guna2DataGridView1.SelectedRows.Count > 0 Then
-            ' Get selected movie IDs
-            Dim selectedMovieIds As New List(Of Integer)()
+    Dim myConnection As MySqlConnection
 
-            For Each row As DataGridViewRow In Guna2DataGridView1.SelectedRows
-                Dim movieId As Integer = Convert.ToInt32(row.Cells("movieId").Value) ' Replace "MovieID" with your actual column name
-                selectedMovieIds.Add(movieId)
-            Next
+    Public Sub CreatePlaylist(name As String)
 
-            ' Insert selected movies into the watchlist table in MySQL
-            InsertMoviesIntoWatchlist(selectedMovieIds)
-        Else
-            MessageBox.Show("Please select at least one movie to add to the watchlist.")
-        End If
+        myConnection = Common.getDBConnectionX()
+
+        myConnection.Open()
+
+        Dim query As String = "INSERT INTO playlists (name) VALUES (@name)"
+        Using cmd As New MySqlCommand(query, myConnection)
+            cmd.Parameters.AddWithValue("@name", playlist_name)
+            cmd.ExecuteNonQuery()
+        End Using
+
     End Sub
 
-    Private Sub InsertMoviesIntoWatchlist(movieIds As List(Of Integer))
-            Using connection As New MySqlConnection(connectionString)
-                connection.Open()
+    Public Sub AddMovieToPlaylist(playlistId As Integer, movieId As Integer)
+        Using connection As New MySqlConnection()
+            connection.Open()
 
-                For Each movieId As Integer In movieIds
-                ' Adjust the SQL query based on your database schema
-                Dim query As String = "INSERT INTO watchlist (movieID) VALUES (@movieID)"
-
-                Using command As New MySqlCommand(query, connection)
-                        command.Parameters.AddWithValue("@MovieID", movieId)
-                        command.ExecuteNonQuery()
-                    End Using
-                Next
-
-                MessageBox.Show("Selected movies added to the watchlist successfully.")
+            Dim query As String = "INSERT INTO playlist_movies (playlist_id, movie_id) VALUES (@playlistId, @movieId)"
+            Using cmd As New MySqlCommand(query, connection)
+                cmd.Parameters.AddWithValue("@playlistId", playlistId)
+                cmd.Parameters.AddWithValue("@movieId", movieId)
+                cmd.ExecuteNonQuery()
             End Using
-        End Sub
+        End Using
+    End Sub
 
+    Public Function GetMoviesByPlaylist(playlistId As Integer) As DataTable
+        Dim dataTable As New DataTable()
+
+        Using connection As New MySqlConnection()
+            connection.Open()
+
+            Dim query As String = "SELECT m.* FROM movies m INNER JOIN playlist_movies pm ON m.movie_id = pm.movie_id WHERE pm.playlist_id = @playlistId"
+            Using cmd As New MySqlCommand(query, connection)
+                cmd.Parameters.AddWithValue("@playlistId", playlistId)
+                Using adapter As New MySqlDataAdapter(cmd)
+                    adapter.Fill(dataTable)
+                End Using
+            End Using
+        End Using
+
+        Return dataTable
+    End Function
+
+    Private Sub Guna2Button1_Click_1(sender As Object, e As EventArgs) Handles Guna2Button1.Click
+        ' Access the username value
+        Dim usernameValue As String = Me.Username
+
+
+        Label6.Text = usernameValue
+
+
+    End Sub
+
+    Private Sub BtnNewPlylst_Click(sender As Object, e As EventArgs) Handles BtnNewPlylst.Click
+        CreatePlaylist()
+    End Sub
 End Class

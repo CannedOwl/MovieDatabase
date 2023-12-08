@@ -2,6 +2,7 @@
 Imports MySql.Data.MySqlClient
 Imports Mysqlx
 Public Class LoginPage
+
     Private Sub txtbxpassword_TextChanged(sender As Object, e As EventArgs) Handles txtbxpassword.TextChanged
         txtbxpassword.PasswordChar = "●"
     End Sub
@@ -24,10 +25,14 @@ Public Class LoginPage
 
     'Login Function'
     Sub login()
+        ' Set the Username property with the value from the TextBox in Form1
+
         Dim myConnectionx As MySqlConnection
         Dim myCommandx As MySqlCommand
         Dim username As String = userTxtbx.Text
         Dim password As String = txtbxpassword.Text
+
+        SelectionOfUser.Username = userTxtbx.Text
         myConnectionx = Common.getDBConnectionX()
 
         myConnectionx.Open()
