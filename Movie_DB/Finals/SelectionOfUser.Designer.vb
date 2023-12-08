@@ -23,11 +23,6 @@ Partial Class SelectionOfUser
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         components = New ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(SelectionOfUser))
-        Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges3 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges4 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges5 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges6 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges7 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
@@ -38,49 +33,60 @@ Partial Class SelectionOfUser
         Dim CustomizableEdges12 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges13 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges14 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As DataGridViewCellStyle = New DataGridViewCellStyle()
         Dim CustomizableEdges15 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges16 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges17 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges18 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges19 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges20 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges21 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges22 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges23 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges24 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges25 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges26 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges27 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges28 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges29 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges30 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim CustomizableEdges31 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges32 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges33 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges34 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim DataGridViewCellStyle4 As DataGridViewCellStyle = New DataGridViewCellStyle()
         Dim DataGridViewCellStyle5 As DataGridViewCellStyle = New DataGridViewCellStyle()
         Dim DataGridViewCellStyle6 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim CustomizableEdges17 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges18 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim DataGridViewCellStyle7 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim CustomizableEdges35 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges36 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges3 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges4 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim Animation1 As Guna.UI2.AnimatorNS.Animation = New Guna.UI2.AnimatorNS.Animation()
+        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(SelectionOfUser))
+        Dim CustomizableEdges37 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges38 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Guna2BorderlessForm1 = New Guna.UI2.WinForms.Guna2BorderlessForm(components)
         Guna2ShadowPanel1 = New Guna.UI2.WinForms.Guna2ShadowPanel()
+        Label3 = New Label()
         Guna2ControlBox2 = New Guna.UI2.WinForms.Guna2ControlBox()
         Guna2ControlBox1 = New Guna.UI2.WinForms.Guna2ControlBox()
         Guna2DragControl1 = New Guna.UI2.WinForms.Guna2DragControl(components)
         Guna2ContextMenuStrip1 = New Guna.UI2.WinForms.Guna2ContextMenuStrip()
-        Panel1 = New Panel()
-        BtnWtchlst = New Button()
-        BtnProfile = New Button()
-        Button3 = New Button()
-        Button2 = New Button()
-        Button1 = New Button()
-        Panel2 = New Panel()
         TabWatchlist = New TabControl()
         homeTab = New TabPage()
-        Label3 = New Label()
-        exploreTab = New TabPage()
-        BtnAddtoW = New Guna.UI2.WinForms.Guna2Button()
-        Guna2Button3 = New Guna.UI2.WinForms.Guna2Button()
-        GbtnFS = New Guna.UI2.WinForms.Guna2Button()
-        BtnSrch = New Guna.UI2.WinForms.Guna2Button()
-        Guna2TextBox1 = New Guna.UI2.WinForms.Guna2TextBox()
-        Guna2DataGridView1 = New Guna.UI2.WinForms.Guna2DataGridView()
-        Label5 = New Label()
-        ListBox2 = New ListBox()
+        Guna2PictureBox9 = New Guna.UI2.WinForms.Guna2PictureBox()
+        Guna2PictureBox8 = New Guna.UI2.WinForms.Guna2PictureBox()
+        Guna2PictureBox6 = New Guna.UI2.WinForms.Guna2PictureBox()
+        Guna2PictureBox5 = New Guna.UI2.WinForms.Guna2PictureBox()
+        Guna2PictureBox4 = New Guna.UI2.WinForms.Guna2PictureBox()
+        Guna2PictureBox3 = New Guna.UI2.WinForms.Guna2PictureBox()
         Label4 = New Label()
-        Label1 = New Label()
-        ListBox1 = New ListBox()
-        Label2 = New Label()
+        Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
         TabProfile = New TabPage()
         Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
         Label9 = New Label()
@@ -92,20 +98,46 @@ Partial Class SelectionOfUser
         Label6 = New Label()
         TextBox2 = New TextBox()
         Watchlist = New TabPage()
+        BtnNewPlylst = New Guna.UI2.WinForms.Guna2Button()
         Guna2Button4 = New Guna.UI2.WinForms.Guna2Button()
         Guna2Button2 = New Guna.UI2.WinForms.Guna2Button()
         Guna2DataGridView2 = New Guna.UI2.WinForms.Guna2DataGridView()
+        exploreTab = New TabPage()
+        Guna2Button3 = New Guna.UI2.WinForms.Guna2Button()
+        GbtnFS = New Guna.UI2.WinForms.Guna2Button()
+        Guna2DataGridView1 = New Guna.UI2.WinForms.Guna2DataGridView()
+        Label5 = New Label()
+        ListBox2 = New ListBox()
+        BtnAddtoW = New Guna.UI2.WinForms.Guna2Button()
+        Label1 = New Label()
+        ListBox1 = New ListBox()
+        BtnSrch = New Guna.UI2.WinForms.Guna2Button()
+        Guna2TextBox1 = New Guna.UI2.WinForms.Guna2TextBox()
         Guna2ContextMenuStrip2 = New Guna.UI2.WinForms.Guna2ContextMenuStrip()
-        BtnNewPlylst = New Guna.UI2.WinForms.Guna2Button()
+        Guna2AnimateWindow1 = New Guna.UI2.WinForms.Guna2AnimateWindow(components)
+        Guna2Transition1 = New Guna.UI2.WinForms.Guna2Transition()
+        Button1 = New Button()
+        Button2 = New Button()
+        Button3 = New Button()
+        BtnProfile = New Button()
+        BtnWtchlst = New Button()
+        Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
         Guna2ShadowPanel1.SuspendLayout()
-        Panel1.SuspendLayout()
         TabWatchlist.SuspendLayout()
         homeTab.SuspendLayout()
-        exploreTab.SuspendLayout()
-        CType(Guna2DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
+        CType(Guna2PictureBox9, ComponentModel.ISupportInitialize).BeginInit()
+        CType(Guna2PictureBox8, ComponentModel.ISupportInitialize).BeginInit()
+        CType(Guna2PictureBox6, ComponentModel.ISupportInitialize).BeginInit()
+        CType(Guna2PictureBox5, ComponentModel.ISupportInitialize).BeginInit()
+        CType(Guna2PictureBox4, ComponentModel.ISupportInitialize).BeginInit()
+        CType(Guna2PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
+        CType(Guna2PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         TabProfile.SuspendLayout()
         Watchlist.SuspendLayout()
         CType(Guna2DataGridView2, ComponentModel.ISupportInitialize).BeginInit()
+        exploreTab.SuspendLayout()
+        CType(Guna2DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
+        CType(Guna2PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Guna2BorderlessForm1
@@ -116,42 +148,61 @@ Partial Class SelectionOfUser
         ' 
         ' Guna2ShadowPanel1
         ' 
-        Guna2ShadowPanel1.BackColor = Color.Transparent
-        Guna2ShadowPanel1.BackgroundImage = CType(resources.GetObject("Guna2ShadowPanel1.BackgroundImage"), Image)
+        Guna2ShadowPanel1.BackColor = Color.FromArgb(CByte(15), CByte(15), CByte(15))
+        Guna2ShadowPanel1.Controls.Add(Label3)
         Guna2ShadowPanel1.Controls.Add(Guna2ControlBox2)
         Guna2ShadowPanel1.Controls.Add(Guna2ControlBox1)
+        Guna2Transition1.SetDecoration(Guna2ShadowPanel1, Guna.UI2.AnimatorNS.DecorationType.None)
         Guna2ShadowPanel1.Dock = DockStyle.Top
         Guna2ShadowPanel1.FillColor = Color.Transparent
         Guna2ShadowPanel1.Location = New Point(0, 0)
+        Guna2ShadowPanel1.Margin = New Padding(4, 3, 4, 3)
         Guna2ShadowPanel1.Name = "Guna2ShadowPanel1"
-        Guna2ShadowPanel1.ShadowColor = SystemColors.ActiveCaptionText
+        Guna2ShadowPanel1.ShadowColor = Color.FromArgb(CByte(15), CByte(15), CByte(15))
         Guna2ShadowPanel1.ShadowDepth = 70
         Guna2ShadowPanel1.ShadowShift = 100
-        Guna2ShadowPanel1.Size = New Size(1031, 31)
+        Guna2ShadowPanel1.Size = New Size(858, 31)
         Guna2ShadowPanel1.TabIndex = 4
+        ' 
+        ' Label3
+        ' 
+        Label3.AutoSize = True
+        Guna2Transition1.SetDecoration(Label3, Guna.UI2.AnimatorNS.DecorationType.None)
+        Label3.Font = New Font("Bradley Hand ITC", 9F, FontStyle.Bold, GraphicsUnit.Point)
+        Label3.ForeColor = SystemColors.ButtonHighlight
+        Label3.Location = New Point(4, 9)
+        Label3.Margin = New Padding(4, 0, 4, 0)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(49, 15)
+        Label3.TabIndex = 11
+        Label3.Text = "B FLIX"
         ' 
         ' Guna2ControlBox2
         ' 
         Guna2ControlBox2.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         Guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox
-        Guna2ControlBox2.CustomizableEdges = CustomizableEdges1
+        Guna2ControlBox2.CustomizableEdges = CustomizableEdges5
+        Guna2Transition1.SetDecoration(Guna2ControlBox2, Guna.UI2.AnimatorNS.DecorationType.None)
         Guna2ControlBox2.FillColor = Color.Transparent
         Guna2ControlBox2.IconColor = Color.DimGray
-        Guna2ControlBox2.Location = New Point(974, 3)
+        Guna2ControlBox2.Location = New Point(802, 3)
+        Guna2ControlBox2.Margin = New Padding(4, 3, 4, 3)
         Guna2ControlBox2.Name = "Guna2ControlBox2"
-        Guna2ControlBox2.ShadowDecoration.CustomizableEdges = CustomizableEdges2
+        Guna2ControlBox2.ShadowDecoration.CustomizableEdges = CustomizableEdges6
         Guna2ControlBox2.Size = New Size(24, 24)
         Guna2ControlBox2.TabIndex = 10
         ' 
         ' Guna2ControlBox1
         ' 
         Guna2ControlBox1.Anchor = AnchorStyles.Top Or AnchorStyles.Right
-        Guna2ControlBox1.CustomizableEdges = CustomizableEdges3
+        Guna2ControlBox1.CustomizableEdges = CustomizableEdges7
+        Guna2Transition1.SetDecoration(Guna2ControlBox1, Guna.UI2.AnimatorNS.DecorationType.None)
         Guna2ControlBox1.FillColor = Color.Transparent
         Guna2ControlBox1.IconColor = Color.DimGray
-        Guna2ControlBox1.Location = New Point(1004, 3)
+        Guna2ControlBox1.Location = New Point(831, 3)
+        Guna2ControlBox1.Margin = New Padding(4, 3, 4, 3)
         Guna2ControlBox1.Name = "Guna2ControlBox1"
-        Guna2ControlBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges4
+        Guna2ControlBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges8
         Guna2ControlBox1.Size = New Size(24, 24)
         Guna2ControlBox1.TabIndex = 9
         ' 
@@ -163,6 +214,7 @@ Partial Class SelectionOfUser
         ' 
         ' Guna2ContextMenuStrip1
         ' 
+        Guna2Transition1.SetDecoration(Guna2ContextMenuStrip1, Guna.UI2.AnimatorNS.DecorationType.None)
         Guna2ContextMenuStrip1.ImageScalingSize = New Size(24, 24)
         Guna2ContextMenuStrip1.Name = "Guna2ContextMenuStrip1"
         Guna2ContextMenuStrip1.RenderStyle.ArrowColor = Color.FromArgb(CByte(151), CByte(143), CByte(255))
@@ -176,368 +228,167 @@ Partial Class SelectionOfUser
         Guna2ContextMenuStrip1.RenderStyle.TextRenderingHint = Drawing.Text.TextRenderingHint.SystemDefault
         Guna2ContextMenuStrip1.Size = New Size(61, 4)
         ' 
-        ' Panel1
-        ' 
-        Panel1.BackColor = SystemColors.Desktop
-        Panel1.Controls.Add(BtnWtchlst)
-        Panel1.Controls.Add(BtnProfile)
-        Panel1.Controls.Add(Button3)
-        Panel1.Controls.Add(Button2)
-        Panel1.Controls.Add(Button1)
-        Panel1.Controls.Add(Panel2)
-        Panel1.Dock = DockStyle.Left
-        Panel1.Location = New Point(0, 31)
-        Panel1.Name = "Panel1"
-        Panel1.Size = New Size(115, 519)
-        Panel1.TabIndex = 5
-        ' 
-        ' BtnWtchlst
-        ' 
-        BtnWtchlst.BackColor = Color.Gainsboro
-        BtnWtchlst.Font = New Font("Segoe UI", 13F, FontStyle.Bold, GraphicsUnit.Point)
-        BtnWtchlst.Location = New Point(3, 140)
-        BtnWtchlst.Name = "BtnWtchlst"
-        BtnWtchlst.Size = New Size(102, 61)
-        BtnWtchlst.TabIndex = 13
-        BtnWtchlst.Text = "Watchlist"
-        BtnWtchlst.UseVisualStyleBackColor = False
-        ' 
-        ' BtnProfile
-        ' 
-        BtnProfile.BackColor = Color.Gainsboro
-        BtnProfile.Font = New Font("Segoe UI", 13F, FontStyle.Bold, GraphicsUnit.Point)
-        BtnProfile.Location = New Point(3, 383)
-        BtnProfile.Name = "BtnProfile"
-        BtnProfile.Size = New Size(102, 61)
-        BtnProfile.TabIndex = 12
-        BtnProfile.Text = "PROFILE"
-        BtnProfile.UseVisualStyleBackColor = False
-        ' 
-        ' Button3
-        ' 
-        Button3.BackColor = Color.RosyBrown
-        Button3.Font = New Font("Segoe UI", 13F, FontStyle.Bold, GraphicsUnit.Point)
-        Button3.Location = New Point(3, 451)
-        Button3.Name = "Button3"
-        Button3.Size = New Size(102, 61)
-        Button3.TabIndex = 11
-        Button3.Text = "LOG OUT"
-        Button3.UseVisualStyleBackColor = False
-        ' 
-        ' Button2
-        ' 
-        Button2.BackColor = Color.Gainsboro
-        Button2.Font = New Font("Segoe UI", 13F, FontStyle.Bold, GraphicsUnit.Point)
-        Button2.Location = New Point(3, 73)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(102, 61)
-        Button2.TabIndex = 10
-        Button2.Text = "BROWSE"
-        Button2.UseVisualStyleBackColor = False
-        ' 
-        ' Button1
-        ' 
-        Button1.BackColor = Color.Gainsboro
-        Button1.Font = New Font("Segoe UI", 13F, FontStyle.Bold, GraphicsUnit.Point)
-        Button1.Location = New Point(3, 6)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(102, 61)
-        Button1.TabIndex = 9
-        Button1.Text = "HOME"
-        Button1.UseVisualStyleBackColor = False
-        ' 
-        ' Panel2
-        ' 
-        Panel2.Location = New Point(206, 0)
-        Panel2.Name = "Panel2"
-        Panel2.Size = New Size(822, 519)
-        Panel2.TabIndex = 6
-        ' 
         ' TabWatchlist
         ' 
         TabWatchlist.Controls.Add(homeTab)
-        TabWatchlist.Controls.Add(exploreTab)
         TabWatchlist.Controls.Add(TabProfile)
         TabWatchlist.Controls.Add(Watchlist)
-        TabWatchlist.Location = New Point(117, 25)
+        TabWatchlist.Controls.Add(exploreTab)
+        Guna2Transition1.SetDecoration(TabWatchlist, Guna.UI2.AnimatorNS.DecorationType.None)
+        TabWatchlist.Location = New Point(-7, 160)
+        TabWatchlist.Margin = New Padding(4, 3, 4, 3)
         TabWatchlist.Name = "TabWatchlist"
         TabWatchlist.SelectedIndex = 0
-        TabWatchlist.Size = New Size(914, 525)
+        TabWatchlist.Size = New Size(873, 401)
         TabWatchlist.TabIndex = 6
         ' 
         ' homeTab
         ' 
-        homeTab.BackColor = SystemColors.AppWorkspace
-        homeTab.Controls.Add(Label3)
+        homeTab.BackColor = Color.FromArgb(CByte(15), CByte(15), CByte(15))
+        homeTab.Controls.Add(Guna2PictureBox9)
+        homeTab.Controls.Add(Guna2PictureBox8)
+        homeTab.Controls.Add(Guna2PictureBox6)
+        homeTab.Controls.Add(Guna2PictureBox5)
+        homeTab.Controls.Add(Guna2PictureBox4)
+        homeTab.Controls.Add(Guna2PictureBox3)
+        homeTab.Controls.Add(Label4)
+        homeTab.Controls.Add(Guna2PictureBox2)
+        Guna2Transition1.SetDecoration(homeTab, Guna.UI2.AnimatorNS.DecorationType.None)
         homeTab.Location = New Point(4, 24)
+        homeTab.Margin = New Padding(4, 3, 4, 3)
         homeTab.Name = "homeTab"
-        homeTab.Padding = New Padding(3)
-        homeTab.Size = New Size(906, 497)
+        homeTab.Padding = New Padding(4, 3, 4, 3)
+        homeTab.Size = New Size(865, 373)
         homeTab.TabIndex = 0
         homeTab.Text = "Home"
         ' 
-        ' Label3
+        ' Guna2PictureBox9
         ' 
-        Label3.AutoSize = True
-        Label3.Font = New Font("Microsoft New Tai Lue", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Label3.Location = New Point(6, 16)
-        Label3.Name = "Label3"
-        Label3.Size = New Size(116, 21)
-        Label3.TabIndex = 0
-        Label3.Text = "Welcome Back!"
+        Guna2PictureBox9.CustomizableEdges = CustomizableEdges9
+        Guna2Transition1.SetDecoration(Guna2PictureBox9, Guna.UI2.AnimatorNS.DecorationType.BottomMirror)
+        Guna2PictureBox9.ErrorImage = Nothing
+        Guna2PictureBox9.Image = CType(resources.GetObject("Guna2PictureBox9.Image"), Image)
+        Guna2PictureBox9.ImageRotate = 0F
+        Guna2PictureBox9.InitialImage = Nothing
+        Guna2PictureBox9.Location = New Point(703, 177)
+        Guna2PictureBox9.Name = "Guna2PictureBox9"
+        Guna2PictureBox9.ShadowDecoration.CustomizableEdges = CustomizableEdges10
+        Guna2PictureBox9.Size = New Size(81, 118)
+        Guna2PictureBox9.SizeMode = PictureBoxSizeMode.StretchImage
+        Guna2PictureBox9.TabIndex = 8
+        Guna2PictureBox9.TabStop = False
         ' 
-        ' exploreTab
+        ' Guna2PictureBox8
         ' 
-        exploreTab.BackColor = SystemColors.ButtonShadow
-        exploreTab.BackgroundImage = CType(resources.GetObject("exploreTab.BackgroundImage"), Image)
-        exploreTab.Controls.Add(BtnAddtoW)
-        exploreTab.Controls.Add(Guna2Button3)
-        exploreTab.Controls.Add(GbtnFS)
-        exploreTab.Controls.Add(BtnSrch)
-        exploreTab.Controls.Add(Guna2TextBox1)
-        exploreTab.Controls.Add(Guna2DataGridView1)
-        exploreTab.Controls.Add(Label5)
-        exploreTab.Controls.Add(ListBox2)
-        exploreTab.Controls.Add(Label4)
-        exploreTab.Controls.Add(Label1)
-        exploreTab.Controls.Add(ListBox1)
-        exploreTab.Controls.Add(Label2)
-        exploreTab.Location = New Point(4, 24)
-        exploreTab.Name = "exploreTab"
-        exploreTab.Padding = New Padding(3)
-        exploreTab.Size = New Size(906, 497)
-        exploreTab.TabIndex = 1
-        exploreTab.Text = "Explore"
+        Guna2PictureBox8.CustomizableEdges = CustomizableEdges11
+        Guna2Transition1.SetDecoration(Guna2PictureBox8, Guna.UI2.AnimatorNS.DecorationType.BottomMirror)
+        Guna2PictureBox8.ErrorImage = Nothing
+        Guna2PictureBox8.FillColor = SystemColors.Window
+        Guna2PictureBox8.Image = CType(resources.GetObject("Guna2PictureBox8.Image"), Image)
+        Guna2PictureBox8.ImageRotate = 0F
+        Guna2PictureBox8.InitialImage = Nothing
+        Guna2PictureBox8.Location = New Point(703, 39)
+        Guna2PictureBox8.Name = "Guna2PictureBox8"
+        Guna2PictureBox8.ShadowDecoration.CustomizableEdges = CustomizableEdges12
+        Guna2PictureBox8.Size = New Size(81, 118)
+        Guna2PictureBox8.SizeMode = PictureBoxSizeMode.StretchImage
+        Guna2PictureBox8.TabIndex = 7
+        Guna2PictureBox8.TabStop = False
         ' 
-        ' BtnAddtoW
+        ' Guna2PictureBox6
         ' 
-        BtnAddtoW.AutoRoundedCorners = True
-        BtnAddtoW.BackColor = Color.Transparent
-        BtnAddtoW.BorderRadius = 16
-        BtnAddtoW.CustomizableEdges = CustomizableEdges5
-        BtnAddtoW.DisabledState.BorderColor = Color.DarkGray
-        BtnAddtoW.DisabledState.CustomBorderColor = Color.DarkGray
-        BtnAddtoW.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        BtnAddtoW.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
-        BtnAddtoW.FillColor = Color.SteelBlue
-        BtnAddtoW.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point)
-        BtnAddtoW.ForeColor = Color.White
-        BtnAddtoW.Location = New Point(642, 452)
-        BtnAddtoW.Name = "BtnAddtoW"
-        BtnAddtoW.ShadowDecoration.CustomizableEdges = CustomizableEdges6
-        BtnAddtoW.Size = New Size(109, 34)
-        BtnAddtoW.TabIndex = 18
-        BtnAddtoW.Text = "Add to Watchlist"
+        Guna2PictureBox6.CustomizableEdges = CustomizableEdges13
+        Guna2Transition1.SetDecoration(Guna2PictureBox6, Guna.UI2.AnimatorNS.DecorationType.BottomMirror)
+        Guna2PictureBox6.ErrorImage = Nothing
+        Guna2PictureBox6.Image = CType(resources.GetObject("Guna2PictureBox6.Image"), Image)
+        Guna2PictureBox6.ImageRotate = 0F
+        Guna2PictureBox6.InitialImage = Nothing
+        Guna2PictureBox6.Location = New Point(593, 177)
+        Guna2PictureBox6.Name = "Guna2PictureBox6"
+        Guna2PictureBox6.ShadowDecoration.CustomizableEdges = CustomizableEdges14
+        Guna2PictureBox6.Size = New Size(81, 118)
+        Guna2PictureBox6.SizeMode = PictureBoxSizeMode.StretchImage
+        Guna2PictureBox6.TabIndex = 6
+        Guna2PictureBox6.TabStop = False
         ' 
-        ' Guna2Button3
+        ' Guna2PictureBox5
         ' 
-        Guna2Button3.AutoRoundedCorners = True
-        Guna2Button3.BackColor = Color.Transparent
-        Guna2Button3.BorderRadius = 10
-        Guna2Button3.CustomBorderThickness = New Padding(32, 0, 0, 0)
-        Guna2Button3.CustomizableEdges = CustomizableEdges7
-        Guna2Button3.DisabledState.BorderColor = Color.DarkGray
-        Guna2Button3.DisabledState.CustomBorderColor = Color.DarkGray
-        Guna2Button3.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        Guna2Button3.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
-        Guna2Button3.FillColor = Color.LightSkyBlue
-        Guna2Button3.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point)
-        Guna2Button3.ForeColor = Color.White
-        Guna2Button3.Location = New Point(717, 125)
-        Guna2Button3.Name = "Guna2Button3"
-        Guna2Button3.ShadowDecoration.CustomizableEdges = CustomizableEdges8
-        Guna2Button3.Size = New Size(100, 23)
-        Guna2Button3.TabIndex = 17
-        Guna2Button3.Text = "Clear"
+        Guna2PictureBox5.CustomizableEdges = CustomizableEdges15
+        Guna2Transition1.SetDecoration(Guna2PictureBox5, Guna.UI2.AnimatorNS.DecorationType.BottomMirror)
+        Guna2PictureBox5.ErrorImage = Nothing
+        Guna2PictureBox5.Image = CType(resources.GetObject("Guna2PictureBox5.Image"), Image)
+        Guna2PictureBox5.ImageRotate = 0F
+        Guna2PictureBox5.InitialImage = Nothing
+        Guna2PictureBox5.Location = New Point(593, 39)
+        Guna2PictureBox5.Name = "Guna2PictureBox5"
+        Guna2PictureBox5.ShadowDecoration.CustomizableEdges = CustomizableEdges16
+        Guna2PictureBox5.Size = New Size(81, 118)
+        Guna2PictureBox5.SizeMode = PictureBoxSizeMode.StretchImage
+        Guna2PictureBox5.TabIndex = 5
+        Guna2PictureBox5.TabStop = False
         ' 
-        ' GbtnFS
+        ' Guna2PictureBox4
         ' 
-        GbtnFS.AutoRoundedCorners = True
-        GbtnFS.BackColor = Color.Transparent
-        GbtnFS.BorderRadius = 10
-        GbtnFS.CustomBorderThickness = New Padding(32, 0, 0, 0)
-        GbtnFS.CustomizableEdges = CustomizableEdges9
-        GbtnFS.DisabledState.BorderColor = Color.DarkGray
-        GbtnFS.DisabledState.CustomBorderColor = Color.DarkGray
-        GbtnFS.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        GbtnFS.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
-        GbtnFS.FillColor = Color.YellowGreen
-        GbtnFS.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point)
-        GbtnFS.ForeColor = Color.White
-        GbtnFS.Location = New Point(717, 97)
-        GbtnFS.Name = "GbtnFS"
-        GbtnFS.ShadowDecoration.CustomizableEdges = CustomizableEdges10
-        GbtnFS.Size = New Size(100, 23)
-        GbtnFS.TabIndex = 16
-        GbtnFS.Text = "Filter Search"
+        Guna2PictureBox4.CustomizableEdges = CustomizableEdges17
+        Guna2Transition1.SetDecoration(Guna2PictureBox4, Guna.UI2.AnimatorNS.DecorationType.BottomMirror)
+        Guna2PictureBox4.ErrorImage = Nothing
+        Guna2PictureBox4.Image = CType(resources.GetObject("Guna2PictureBox4.Image"), Image)
+        Guna2PictureBox4.ImageRotate = 0F
+        Guna2PictureBox4.InitialImage = Nothing
+        Guna2PictureBox4.Location = New Point(482, 177)
+        Guna2PictureBox4.Name = "Guna2PictureBox4"
+        Guna2PictureBox4.ShadowDecoration.CustomizableEdges = CustomizableEdges18
+        Guna2PictureBox4.Size = New Size(81, 118)
+        Guna2PictureBox4.SizeMode = PictureBoxSizeMode.StretchImage
+        Guna2PictureBox4.TabIndex = 4
+        Guna2PictureBox4.TabStop = False
         ' 
-        ' BtnSrch
+        ' Guna2PictureBox3
         ' 
-        BtnSrch.AutoRoundedCorners = True
-        BtnSrch.BackColor = Color.Transparent
-        BtnSrch.BorderRadius = 10
-        BtnSrch.CustomBorderThickness = New Padding(32, 0, 0, 0)
-        BtnSrch.CustomizableEdges = CustomizableEdges11
-        BtnSrch.DisabledState.BorderColor = Color.DarkGray
-        BtnSrch.DisabledState.CustomBorderColor = Color.DarkGray
-        BtnSrch.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        BtnSrch.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
-        BtnSrch.FillColor = SystemColors.ControlDarkDark
-        BtnSrch.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point)
-        BtnSrch.ForeColor = Color.White
-        BtnSrch.Location = New Point(24, 122)
-        BtnSrch.Name = "BtnSrch"
-        BtnSrch.ShadowDecoration.CustomizableEdges = CustomizableEdges12
-        BtnSrch.Size = New Size(75, 23)
-        BtnSrch.TabIndex = 15
-        BtnSrch.Text = "Search"
-        ' 
-        ' Guna2TextBox1
-        ' 
-        Guna2TextBox1.AutoRoundedCorners = True
-        Guna2TextBox1.BackColor = Color.Transparent
-        Guna2TextBox1.BorderRadius = 17
-        Guna2TextBox1.CustomizableEdges = CustomizableEdges13
-        Guna2TextBox1.DefaultText = ""
-        Guna2TextBox1.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
-        Guna2TextBox1.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
-        Guna2TextBox1.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
-        Guna2TextBox1.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
-        Guna2TextBox1.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        Guna2TextBox1.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
-        Guna2TextBox1.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        Guna2TextBox1.Location = New Point(24, 80)
-        Guna2TextBox1.Name = "Guna2TextBox1"
-        Guna2TextBox1.PasswordChar = ChrW(0)
-        Guna2TextBox1.PlaceholderText = ""
-        Guna2TextBox1.SelectedText = ""
-        Guna2TextBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges14
-        Guna2TextBox1.Size = New Size(200, 36)
-        Guna2TextBox1.TabIndex = 14
-        ' 
-        ' Guna2DataGridView1
-        ' 
-        DataGridViewCellStyle1.BackColor = Color.White
-        Guna2DataGridView1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
-        Guna2DataGridView1.BackgroundColor = Color.Gainsboro
-        DataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = Color.FromArgb(CByte(100), CByte(88), CByte(255))
-        DataGridViewCellStyle2.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
-        DataGridViewCellStyle2.ForeColor = Color.White
-        DataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = DataGridViewTriState.True
-        Guna2DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
-        Guna2DataGridView1.ColumnHeadersHeight = 4
-        DataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = Color.White
-        DataGridViewCellStyle3.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
-        DataGridViewCellStyle3.ForeColor = Color.FromArgb(CByte(71), CByte(69), CByte(94))
-        DataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
-        DataGridViewCellStyle3.SelectionForeColor = Color.FromArgb(CByte(71), CByte(69), CByte(94))
-        DataGridViewCellStyle3.WrapMode = DataGridViewTriState.False
-        Guna2DataGridView1.DefaultCellStyle = DataGridViewCellStyle3
-        Guna2DataGridView1.GridColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
-        Guna2DataGridView1.Location = New Point(123, 259)
-        Guna2DataGridView1.Name = "Guna2DataGridView1"
-        Guna2DataGridView1.RowHeadersVisible = False
-        Guna2DataGridView1.RowHeadersWidth = 62
-        Guna2DataGridView1.RowTemplate.Height = 25
-        Guna2DataGridView1.Size = New Size(628, 187)
-        Guna2DataGridView1.TabIndex = 13
-        Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White
-        Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = Nothing
-        Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = Color.Empty
-        Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = Color.Empty
-        Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = Color.Empty
-        Guna2DataGridView1.ThemeStyle.BackColor = Color.Gainsboro
-        Guna2DataGridView1.ThemeStyle.GridColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
-        Guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = Color.FromArgb(CByte(100), CByte(88), CByte(255))
-        Guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = DataGridViewHeaderBorderStyle.None
-        Guna2DataGridView1.ThemeStyle.HeaderStyle.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
-        Guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = Color.White
-        Guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing
-        Guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 4
-        Guna2DataGridView1.ThemeStyle.ReadOnly = False
-        Guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = Color.White
-        Guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal
-        Guna2DataGridView1.ThemeStyle.RowsStyle.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
-        Guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = Color.FromArgb(CByte(71), CByte(69), CByte(94))
-        Guna2DataGridView1.ThemeStyle.RowsStyle.Height = 25
-        Guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
-        Guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(CByte(71), CByte(69), CByte(94))
-        ' 
-        ' Label5
-        ' 
-        Label5.AutoSize = True
-        Label5.BackColor = Color.Transparent
-        Label5.Font = New Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
-        Label5.ForeColor = Color.RosyBrown
-        Label5.Location = New Point(528, 15)
-        Label5.Name = "Label5"
-        Label5.Size = New Size(50, 25)
-        Label5.TabIndex = 10
-        Label5.Text = "Year"
-        Label5.Visible = False
-        ' 
-        ' ListBox2
-        ' 
-        ListBox2.BackColor = Color.White
-        ListBox2.Font = New Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point)
-        ListBox2.FormattingEnabled = True
-        ListBox2.ItemHeight = 25
-        ListBox2.Items.AddRange(New Object() {"1996", "1995", "1994", "1993", "1992", "1988", "1977", "1976", "1967", "1965", "1964"})
-        ListBox2.Location = New Point(528, 43)
-        ListBox2.Name = "ListBox2"
-        ListBox2.Size = New Size(152, 154)
-        ListBox2.TabIndex = 9
+        Guna2PictureBox3.BackColor = Color.Transparent
+        Guna2PictureBox3.CustomizableEdges = CustomizableEdges19
+        Guna2Transition1.SetDecoration(Guna2PictureBox3, Guna.UI2.AnimatorNS.DecorationType.BottomMirror)
+        Guna2PictureBox3.ErrorImage = Nothing
+        Guna2PictureBox3.Image = CType(resources.GetObject("Guna2PictureBox3.Image"), Image)
+        Guna2PictureBox3.ImageRotate = 0F
+        Guna2PictureBox3.InitialImage = Nothing
+        Guna2PictureBox3.Location = New Point(482, 39)
+        Guna2PictureBox3.Name = "Guna2PictureBox3"
+        Guna2PictureBox3.ShadowDecoration.CustomizableEdges = CustomizableEdges20
+        Guna2PictureBox3.Size = New Size(81, 118)
+        Guna2PictureBox3.SizeMode = PictureBoxSizeMode.StretchImage
+        Guna2PictureBox3.TabIndex = 3
+        Guna2PictureBox3.TabStop = False
         ' 
         ' Label4
         ' 
         Label4.AutoSize = True
         Label4.BackColor = Color.Transparent
-        Label4.Font = New Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point)
-        Label4.Location = New Point(15, 43)
+        Guna2Transition1.SetDecoration(Label4, Guna.UI2.AnimatorNS.DecorationType.BottomMirror)
+        Label4.Font = New Font("Bahnschrift Condensed", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label4.ForeColor = Color.Gray
+        Label4.Location = New Point(73, 39)
         Label4.Name = "Label4"
-        Label4.Size = New Size(49, 19)
-        Label4.TabIndex = 8
-        Label4.Text = "Search"
+        Label4.Size = New Size(318, 256)
+        Label4.TabIndex = 1
+        Label4.Text = resources.GetString("Label4.Text")
+        Label4.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Label1
+        ' Guna2PictureBox2
         ' 
-        Label1.AutoSize = True
-        Label1.BackColor = Color.Transparent
-        Label1.Font = New Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
-        Label1.ForeColor = Color.RosyBrown
-        Label1.Location = New Point(273, 15)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(66, 25)
-        Label1.TabIndex = 7
-        Label1.Text = "Genre"
-        ' 
-        ' ListBox1
-        ' 
-        ListBox1.BackColor = Color.White
-        ListBox1.Font = New Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point)
-        ListBox1.FormattingEnabled = True
-        ListBox1.ItemHeight = 25
-        ListBox1.Items.AddRange(New Object() {"Action", "Adventure", "Animation", "Children", "Comedy", "Crime", "Documentary", "Drama", "Fantasy", "Horror", "Musical", "Mystery", "Romance", "Sci-Fi", "Thriller", "War", "Western"})
-        ListBox1.Location = New Point(273, 43)
-        ListBox1.Name = "ListBox1"
-        ListBox1.Size = New Size(211, 154)
-        ListBox1.TabIndex = 6
-        ' 
-        ' Label2
-        ' 
-        Label2.AutoSize = True
-        Label2.BackColor = Color.Transparent
-        Label2.Font = New Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point)
-        Label2.ForeColor = Color.RosyBrown
-        Label2.Location = New Point(0, 0)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(111, 37)
-        Label2.TabIndex = 1
-        Label2.Text = "Browse"
+        Guna2PictureBox2.CustomizableEdges = CustomizableEdges21
+        Guna2Transition1.SetDecoration(Guna2PictureBox2, Guna.UI2.AnimatorNS.DecorationType.None)
+        Guna2PictureBox2.ErrorImage = Nothing
+        Guna2PictureBox2.Image = CType(resources.GetObject("Guna2PictureBox2.Image"), Image)
+        Guna2PictureBox2.ImageRotate = 0F
+        Guna2PictureBox2.InitialImage = Nothing
+        Guna2PictureBox2.Location = New Point(4, -72)
+        Guna2PictureBox2.Name = "Guna2PictureBox2"
+        Guna2PictureBox2.ShadowDecoration.CustomizableEdges = CustomizableEdges22
+        Guna2PictureBox2.Size = New Size(861, 520)
+        Guna2PictureBox2.SizeMode = PictureBoxSizeMode.StretchImage
+        Guna2PictureBox2.TabIndex = 0
+        Guna2PictureBox2.TabStop = False
         ' 
         ' TabProfile
         ' 
@@ -551,25 +402,29 @@ Partial Class SelectionOfUser
         TabProfile.Controls.Add(TextBox3)
         TabProfile.Controls.Add(Label6)
         TabProfile.Controls.Add(TextBox2)
+        Guna2Transition1.SetDecoration(TabProfile, Guna.UI2.AnimatorNS.DecorationType.None)
         TabProfile.Location = New Point(4, 24)
+        TabProfile.Margin = New Padding(4, 3, 4, 3)
         TabProfile.Name = "TabProfile"
-        TabProfile.Padding = New Padding(3)
-        TabProfile.Size = New Size(906, 497)
+        TabProfile.Padding = New Padding(4, 3, 4, 3)
+        TabProfile.Size = New Size(865, 373)
         TabProfile.TabIndex = 2
         TabProfile.Text = "TabProfile"
         ' 
         ' Guna2Button1
         ' 
-        Guna2Button1.CustomizableEdges = CustomizableEdges15
+        Guna2Button1.CustomizableEdges = CustomizableEdges23
+        Guna2Transition1.SetDecoration(Guna2Button1, Guna.UI2.AnimatorNS.DecorationType.None)
         Guna2Button1.DisabledState.BorderColor = Color.DarkGray
         Guna2Button1.DisabledState.CustomBorderColor = Color.DarkGray
         Guna2Button1.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
         Guna2Button1.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
         Guna2Button1.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
         Guna2Button1.ForeColor = Color.White
-        Guna2Button1.Location = New Point(109, 228)
+        Guna2Button1.Location = New Point(108, 228)
+        Guna2Button1.Margin = New Padding(4, 3, 4, 3)
         Guna2Button1.Name = "Guna2Button1"
-        Guna2Button1.ShadowDecoration.CustomizableEdges = CustomizableEdges16
+        Guna2Button1.ShadowDecoration.CustomizableEdges = CustomizableEdges24
         Guna2Button1.Size = New Size(180, 45)
         Guna2Button1.TabIndex = 8
         Guna2Button1.Text = "Guna2Button1"
@@ -577,7 +432,9 @@ Partial Class SelectionOfUser
         ' Label9
         ' 
         Label9.AutoSize = True
+        Guna2Transition1.SetDecoration(Label9, Guna.UI2.AnimatorNS.DecorationType.None)
         Label9.Location = New Point(189, 125)
+        Label9.Margin = New Padding(4, 0, 4, 0)
         Label9.Name = "Label9"
         Label9.Size = New Size(41, 15)
         Label9.TabIndex = 7
@@ -585,7 +442,9 @@ Partial Class SelectionOfUser
         ' 
         ' TextBox5
         ' 
+        Guna2Transition1.SetDecoration(TextBox5, Guna.UI2.AnimatorNS.DecorationType.None)
         TextBox5.Location = New Point(189, 143)
+        TextBox5.Margin = New Padding(4, 3, 4, 3)
         TextBox5.Name = "TextBox5"
         TextBox5.Size = New Size(100, 23)
         TextBox5.TabIndex = 6
@@ -593,7 +452,9 @@ Partial Class SelectionOfUser
         ' Label8
         ' 
         Label8.AutoSize = True
+        Guna2Transition1.SetDecoration(Label8, Guna.UI2.AnimatorNS.DecorationType.None)
         Label8.Location = New Point(189, 63)
+        Label8.Margin = New Padding(4, 0, 4, 0)
         Label8.Name = "Label8"
         Label8.Size = New Size(41, 15)
         Label8.TabIndex = 5
@@ -601,7 +462,9 @@ Partial Class SelectionOfUser
         ' 
         ' TextBox4
         ' 
+        Guna2Transition1.SetDecoration(TextBox4, Guna.UI2.AnimatorNS.DecorationType.None)
         TextBox4.Location = New Point(189, 81)
+        TextBox4.Margin = New Padding(4, 3, 4, 3)
         TextBox4.Name = "TextBox4"
         TextBox4.Size = New Size(100, 23)
         TextBox4.TabIndex = 4
@@ -609,7 +472,9 @@ Partial Class SelectionOfUser
         ' Label7
         ' 
         Label7.AutoSize = True
+        Guna2Transition1.SetDecoration(Label7, Guna.UI2.AnimatorNS.DecorationType.None)
         Label7.Location = New Point(31, 125)
+        Label7.Margin = New Padding(4, 0, 4, 0)
         Label7.Name = "Label7"
         Label7.Size = New Size(41, 15)
         Label7.TabIndex = 3
@@ -617,7 +482,9 @@ Partial Class SelectionOfUser
         ' 
         ' TextBox3
         ' 
+        Guna2Transition1.SetDecoration(TextBox3, Guna.UI2.AnimatorNS.DecorationType.None)
         TextBox3.Location = New Point(31, 143)
+        TextBox3.Margin = New Padding(4, 3, 4, 3)
         TextBox3.Name = "TextBox3"
         TextBox3.Size = New Size(100, 23)
         TextBox3.TabIndex = 2
@@ -625,7 +492,9 @@ Partial Class SelectionOfUser
         ' Label6
         ' 
         Label6.AutoSize = True
+        Guna2Transition1.SetDecoration(Label6, Guna.UI2.AnimatorNS.DecorationType.None)
         Label6.Location = New Point(31, 63)
+        Label6.Margin = New Padding(4, 0, 4, 0)
         Label6.Name = "Label6"
         Label6.Size = New Size(41, 15)
         Label6.TabIndex = 1
@@ -633,7 +502,9 @@ Partial Class SelectionOfUser
         ' 
         ' TextBox2
         ' 
+        Guna2Transition1.SetDecoration(TextBox2, Guna.UI2.AnimatorNS.DecorationType.None)
         TextBox2.Location = New Point(31, 81)
+        TextBox2.Margin = New Padding(4, 3, 4, 3)
         TextBox2.Name = "TextBox2"
         TextBox2.Size = New Size(100, 23)
         TextBox2.TabIndex = 0
@@ -645,17 +516,39 @@ Partial Class SelectionOfUser
         Watchlist.Controls.Add(Guna2Button4)
         Watchlist.Controls.Add(Guna2Button2)
         Watchlist.Controls.Add(Guna2DataGridView2)
+        Guna2Transition1.SetDecoration(Watchlist, Guna.UI2.AnimatorNS.DecorationType.None)
         Watchlist.Location = New Point(4, 24)
+        Watchlist.Margin = New Padding(4, 3, 4, 3)
         Watchlist.Name = "Watchlist"
-        Watchlist.Padding = New Padding(3)
-        Watchlist.Size = New Size(906, 497)
+        Watchlist.Padding = New Padding(4, 3, 4, 3)
+        Watchlist.Size = New Size(865, 373)
         Watchlist.TabIndex = 3
         Watchlist.Text = "Watchlist"
+        ' 
+        ' BtnNewPlylst
+        ' 
+        BtnNewPlylst.BorderRadius = 10
+        BtnNewPlylst.CustomizableEdges = CustomizableEdges25
+        Guna2Transition1.SetDecoration(BtnNewPlylst, Guna.UI2.AnimatorNS.DecorationType.None)
+        BtnNewPlylst.DisabledState.BorderColor = Color.DarkGray
+        BtnNewPlylst.DisabledState.CustomBorderColor = Color.DarkGray
+        BtnNewPlylst.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        BtnNewPlylst.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        BtnNewPlylst.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        BtnNewPlylst.ForeColor = Color.White
+        BtnNewPlylst.Location = New Point(489, 138)
+        BtnNewPlylst.Margin = New Padding(4, 3, 4, 3)
+        BtnNewPlylst.Name = "BtnNewPlylst"
+        BtnNewPlylst.ShadowDecoration.CustomizableEdges = CustomizableEdges26
+        BtnNewPlylst.Size = New Size(78, 45)
+        BtnNewPlylst.TabIndex = 3
+        BtnNewPlylst.Text = "New Playlist"
         ' 
         ' Guna2Button4
         ' 
         Guna2Button4.BorderRadius = 10
-        Guna2Button4.CustomizableEdges = CustomizableEdges19
+        Guna2Button4.CustomizableEdges = CustomizableEdges27
+        Guna2Transition1.SetDecoration(Guna2Button4, Guna.UI2.AnimatorNS.DecorationType.None)
         Guna2Button4.DisabledState.BorderColor = Color.DarkGray
         Guna2Button4.DisabledState.CustomBorderColor = Color.DarkGray
         Guna2Button4.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
@@ -663,9 +556,10 @@ Partial Class SelectionOfUser
         Guna2Button4.FillColor = Color.IndianRed
         Guna2Button4.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
         Guna2Button4.ForeColor = Color.White
-        Guna2Button4.Location = New Point(337, 391)
+        Guna2Button4.Location = New Point(489, 222)
+        Guna2Button4.Margin = New Padding(4, 3, 4, 3)
         Guna2Button4.Name = "Guna2Button4"
-        Guna2Button4.ShadowDecoration.CustomizableEdges = CustomizableEdges20
+        Guna2Button4.ShadowDecoration.CustomizableEdges = CustomizableEdges28
         Guna2Button4.Size = New Size(78, 45)
         Guna2Button4.TabIndex = 2
         Guna2Button4.Text = "Delete"
@@ -673,7 +567,8 @@ Partial Class SelectionOfUser
         ' Guna2Button2
         ' 
         Guna2Button2.BorderRadius = 10
-        Guna2Button2.CustomizableEdges = CustomizableEdges21
+        Guna2Button2.CustomizableEdges = CustomizableEdges29
+        Guna2Transition1.SetDecoration(Guna2Button2, Guna.UI2.AnimatorNS.DecorationType.None)
         Guna2Button2.DisabledState.BorderColor = Color.DarkGray
         Guna2Button2.DisabledState.CustomBorderColor = Color.DarkGray
         Guna2Button2.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
@@ -681,40 +576,44 @@ Partial Class SelectionOfUser
         Guna2Button2.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
         Guna2Button2.ForeColor = Color.White
         Guna2Button2.Location = New Point(23, 21)
+        Guna2Button2.Margin = New Padding(4, 3, 4, 3)
         Guna2Button2.Name = "Guna2Button2"
-        Guna2Button2.ShadowDecoration.CustomizableEdges = CustomizableEdges22
+        Guna2Button2.ShadowDecoration.CustomizableEdges = CustomizableEdges30
         Guna2Button2.Size = New Size(78, 45)
         Guna2Button2.TabIndex = 1
         Guna2Button2.Text = "Refresh"
         ' 
         ' Guna2DataGridView2
         ' 
-        DataGridViewCellStyle4.BackColor = Color.White
-        Guna2DataGridView2.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle4
-        DataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle5.BackColor = Color.FromArgb(CByte(100), CByte(88), CByte(255))
-        DataGridViewCellStyle5.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
-        DataGridViewCellStyle5.ForeColor = Color.White
-        DataGridViewCellStyle5.SelectionBackColor = SystemColors.Highlight
-        DataGridViewCellStyle5.SelectionForeColor = SystemColors.HighlightText
-        DataGridViewCellStyle5.WrapMode = DataGridViewTriState.True
-        Guna2DataGridView2.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle1.BackColor = Color.White
+        Guna2DataGridView2.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = Color.FromArgb(CByte(100), CByte(88), CByte(255))
+        DataGridViewCellStyle2.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        DataGridViewCellStyle2.ForeColor = Color.White
+        DataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = DataGridViewTriState.True
+        Guna2DataGridView2.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Guna2DataGridView2.ColumnHeadersHeight = 4
         Guna2DataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing
-        DataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle6.BackColor = Color.White
-        DataGridViewCellStyle6.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
-        DataGridViewCellStyle6.ForeColor = Color.FromArgb(CByte(71), CByte(69), CByte(94))
-        DataGridViewCellStyle6.SelectionBackColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
-        DataGridViewCellStyle6.SelectionForeColor = Color.FromArgb(CByte(71), CByte(69), CByte(94))
-        DataGridViewCellStyle6.WrapMode = DataGridViewTriState.False
-        Guna2DataGridView2.DefaultCellStyle = DataGridViewCellStyle6
+        Guna2Transition1.SetDecoration(Guna2DataGridView2, Guna.UI2.AnimatorNS.DecorationType.None)
+        DataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = Color.White
+        DataGridViewCellStyle3.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        DataGridViewCellStyle3.ForeColor = Color.FromArgb(CByte(71), CByte(69), CByte(94))
+        DataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
+        DataGridViewCellStyle3.SelectionForeColor = Color.FromArgb(CByte(71), CByte(69), CByte(94))
+        DataGridViewCellStyle3.WrapMode = DataGridViewTriState.False
+        Guna2DataGridView2.DefaultCellStyle = DataGridViewCellStyle3
         Guna2DataGridView2.GridColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
-        Guna2DataGridView2.Location = New Point(23, 72)
+        Guna2DataGridView2.Location = New Point(118, 32)
+        Guna2DataGridView2.Margin = New Padding(4, 3, 4, 3)
         Guna2DataGridView2.Name = "Guna2DataGridView2"
         Guna2DataGridView2.RowHeadersVisible = False
+        Guna2DataGridView2.RowHeadersWidth = 62
         Guna2DataGridView2.RowTemplate.Height = 25
-        Guna2DataGridView2.Size = New Size(284, 364)
+        Guna2DataGridView2.Size = New Size(284, 285)
         Guna2DataGridView2.TabIndex = 0
         Guna2DataGridView2.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White
         Guna2DataGridView2.ThemeStyle.AlternatingRowsStyle.Font = Nothing
@@ -738,8 +637,265 @@ Partial Class SelectionOfUser
         Guna2DataGridView2.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
         Guna2DataGridView2.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(CByte(71), CByte(69), CByte(94))
         ' 
+        ' exploreTab
+        ' 
+        exploreTab.BackColor = Color.FromArgb(CByte(15), CByte(15), CByte(15))
+        exploreTab.BackgroundImageLayout = ImageLayout.Stretch
+        exploreTab.Controls.Add(Guna2Button3)
+        exploreTab.Controls.Add(GbtnFS)
+        exploreTab.Controls.Add(Guna2DataGridView1)
+        exploreTab.Controls.Add(Label5)
+        exploreTab.Controls.Add(ListBox2)
+        exploreTab.Controls.Add(BtnAddtoW)
+        exploreTab.Controls.Add(Label1)
+        exploreTab.Controls.Add(ListBox1)
+        Guna2Transition1.SetDecoration(exploreTab, Guna.UI2.AnimatorNS.DecorationType.None)
+        exploreTab.Location = New Point(4, 24)
+        exploreTab.Margin = New Padding(4, 3, 4, 3)
+        exploreTab.Name = "exploreTab"
+        exploreTab.Padding = New Padding(4, 3, 4, 3)
+        exploreTab.Size = New Size(865, 373)
+        exploreTab.TabIndex = 1
+        exploreTab.Text = "Explore"
+        ' 
+        ' Guna2Button3
+        ' 
+        Guna2Button3.AutoRoundedCorners = True
+        Guna2Button3.BackColor = Color.Transparent
+        Guna2Button3.BorderRadius = 10
+        Guna2Button3.CustomBorderThickness = New Padding(32, 0, 0, 0)
+        Guna2Button3.CustomizableEdges = CustomizableEdges31
+        Guna2Transition1.SetDecoration(Guna2Button3, Guna.UI2.AnimatorNS.DecorationType.None)
+        Guna2Button3.DisabledState.BorderColor = Color.DarkGray
+        Guna2Button3.DisabledState.CustomBorderColor = Color.DarkGray
+        Guna2Button3.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        Guna2Button3.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        Guna2Button3.FillColor = Color.RosyBrown
+        Guna2Button3.Font = New Font("Bahnschrift SemiBold SemiConden", 9F, FontStyle.Bold, GraphicsUnit.Point)
+        Guna2Button3.ForeColor = Color.Black
+        Guna2Button3.Location = New Point(758, 333)
+        Guna2Button3.Margin = New Padding(4, 3, 4, 3)
+        Guna2Button3.Name = "Guna2Button3"
+        Guna2Button3.ShadowDecoration.CustomizableEdges = CustomizableEdges32
+        Guna2Button3.Size = New Size(100, 23)
+        Guna2Button3.TabIndex = 17
+        Guna2Button3.Text = "Clear"
+        ' 
+        ' GbtnFS
+        ' 
+        GbtnFS.AutoRoundedCorners = True
+        GbtnFS.BackColor = Color.Transparent
+        GbtnFS.BorderRadius = 10
+        GbtnFS.CustomBorderThickness = New Padding(32, 0, 0, 0)
+        GbtnFS.CustomizableEdges = CustomizableEdges33
+        Guna2Transition1.SetDecoration(GbtnFS, Guna.UI2.AnimatorNS.DecorationType.None)
+        GbtnFS.DisabledState.BorderColor = Color.DarkGray
+        GbtnFS.DisabledState.CustomBorderColor = Color.DarkGray
+        GbtnFS.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        GbtnFS.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        GbtnFS.FillColor = Color.SteelBlue
+        GbtnFS.Font = New Font("Bahnschrift SemiBold SemiConden", 9F, FontStyle.Bold, GraphicsUnit.Point)
+        GbtnFS.ForeColor = Color.Black
+        GbtnFS.Location = New Point(652, 333)
+        GbtnFS.Margin = New Padding(4, 3, 4, 3)
+        GbtnFS.Name = "GbtnFS"
+        GbtnFS.ShadowDecoration.CustomizableEdges = CustomizableEdges34
+        GbtnFS.Size = New Size(100, 23)
+        GbtnFS.TabIndex = 16
+        GbtnFS.Text = "Filter Search"
+        ' 
+        ' Guna2DataGridView1
+        ' 
+        DataGridViewCellStyle4.BackColor = Color.White
+        Guna2DataGridView1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle4
+        Guna2DataGridView1.BackgroundColor = Color.Gainsboro
+        Guna2DataGridView1.BorderStyle = BorderStyle.Fixed3D
+        Guna2DataGridView1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Raised
+        DataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle5.BackColor = Color.FromArgb(CByte(100), CByte(88), CByte(255))
+        DataGridViewCellStyle5.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        DataGridViewCellStyle5.ForeColor = Color.White
+        DataGridViewCellStyle5.SelectionBackColor = SystemColors.Highlight
+        DataGridViewCellStyle5.SelectionForeColor = SystemColors.HighlightText
+        DataGridViewCellStyle5.WrapMode = DataGridViewTriState.True
+        Guna2DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
+        Guna2DataGridView1.ColumnHeadersHeight = 4
+        Guna2Transition1.SetDecoration(Guna2DataGridView1, Guna.UI2.AnimatorNS.DecorationType.None)
+        DataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle6.BackColor = Color.White
+        DataGridViewCellStyle6.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        DataGridViewCellStyle6.ForeColor = Color.FromArgb(CByte(71), CByte(69), CByte(94))
+        DataGridViewCellStyle6.SelectionBackColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
+        DataGridViewCellStyle6.SelectionForeColor = Color.FromArgb(CByte(71), CByte(69), CByte(94))
+        DataGridViewCellStyle6.WrapMode = DataGridViewTriState.False
+        Guna2DataGridView1.DefaultCellStyle = DataGridViewCellStyle6
+        Guna2DataGridView1.EnableHeadersVisualStyles = True
+        Guna2DataGridView1.GridColor = Color.Black
+        Guna2DataGridView1.Location = New Point(4, 0)
+        Guna2DataGridView1.Margin = New Padding(4, 3, 4, 3)
+        Guna2DataGridView1.Name = "Guna2DataGridView1"
+        Guna2DataGridView1.RowHeadersVisible = False
+        Guna2DataGridView1.RowHeadersWidth = 62
+        DataGridViewCellStyle7.BackColor = Color.White
+        DataGridViewCellStyle7.ForeColor = Color.Black
+        DataGridViewCellStyle7.SelectionBackColor = Color.Gray
+        DataGridViewCellStyle7.SelectionForeColor = Color.White
+        Guna2DataGridView1.RowsDefaultCellStyle = DataGridViewCellStyle7
+        Guna2DataGridView1.RowTemplate.Height = 25
+        Guna2DataGridView1.Size = New Size(635, 321)
+        Guna2DataGridView1.TabIndex = 13
+        Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White
+        Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = Nothing
+        Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = Color.Empty
+        Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = Color.Empty
+        Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = Color.Empty
+        Guna2DataGridView1.ThemeStyle.BackColor = Color.Gainsboro
+        Guna2DataGridView1.ThemeStyle.GridColor = Color.Black
+        Guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = Color.FromArgb(CByte(100), CByte(88), CByte(255))
+        Guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = DataGridViewHeaderBorderStyle.Raised
+        Guna2DataGridView1.ThemeStyle.HeaderStyle.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        Guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = Color.White
+        Guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing
+        Guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 4
+        Guna2DataGridView1.ThemeStyle.ReadOnly = False
+        Guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = Color.White
+        Guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal
+        Guna2DataGridView1.ThemeStyle.RowsStyle.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        Guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = Color.FromArgb(CByte(71), CByte(69), CByte(94))
+        Guna2DataGridView1.ThemeStyle.RowsStyle.Height = 25
+        Guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
+        Guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(CByte(71), CByte(69), CByte(94))
+        ' 
+        ' Label5
+        ' 
+        Label5.AutoSize = True
+        Label5.BackColor = Color.Transparent
+        Guna2Transition1.SetDecoration(Label5, Guna.UI2.AnimatorNS.DecorationType.None)
+        Label5.Font = New Font("Agency FB", 11.25F, FontStyle.Bold, GraphicsUnit.Point)
+        Label5.ForeColor = Color.White
+        Label5.Location = New Point(640, 171)
+        Label5.Margin = New Padding(4, 0, 4, 0)
+        Label5.Name = "Label5"
+        Label5.Size = New Size(32, 18)
+        Label5.TabIndex = 10
+        Label5.Text = "Year"
+        ' 
+        ' ListBox2
+        ' 
+        ListBox2.BackColor = Color.Gainsboro
+        Guna2Transition1.SetDecoration(ListBox2, Guna.UI2.AnimatorNS.DecorationType.None)
+        ListBox2.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        ListBox2.FormattingEnabled = True
+        ListBox2.ItemHeight = 21
+        ListBox2.Items.AddRange(New Object() {"1996", "1995", "1994", "1993", "1992", "1988", "1977", "1976", "1967", "1965", "1964"})
+        ListBox2.Location = New Point(640, 192)
+        ListBox2.Margin = New Padding(4, 3, 4, 3)
+        ListBox2.Name = "ListBox2"
+        ListBox2.Size = New Size(223, 130)
+        ListBox2.TabIndex = 9
+        ' 
+        ' BtnAddtoW
+        ' 
+        BtnAddtoW.AutoRoundedCorners = True
+        BtnAddtoW.BackColor = Color.Transparent
+        BtnAddtoW.BorderRadius = 10
+        BtnAddtoW.CustomizableEdges = CustomizableEdges35
+        Guna2Transition1.SetDecoration(BtnAddtoW, Guna.UI2.AnimatorNS.DecorationType.None)
+        BtnAddtoW.DisabledState.BorderColor = Color.DarkGray
+        BtnAddtoW.DisabledState.CustomBorderColor = Color.DarkGray
+        BtnAddtoW.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        BtnAddtoW.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        BtnAddtoW.FillColor = Color.SteelBlue
+        BtnAddtoW.Font = New Font("Bahnschrift SemiCondensed", 9F, FontStyle.Bold, GraphicsUnit.Point)
+        BtnAddtoW.ForeColor = Color.Black
+        BtnAddtoW.Location = New Point(509, 333)
+        BtnAddtoW.Margin = New Padding(4, 3, 4, 3)
+        BtnAddtoW.Name = "BtnAddtoW"
+        BtnAddtoW.ShadowDecoration.CustomizableEdges = CustomizableEdges36
+        BtnAddtoW.Size = New Size(130, 23)
+        BtnAddtoW.TabIndex = 18
+        BtnAddtoW.Text = "Add to Watchlist"
+        ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.BackColor = Color.Transparent
+        Guna2Transition1.SetDecoration(Label1, Guna.UI2.AnimatorNS.DecorationType.None)
+        Label1.Font = New Font("Agency FB", 11.25F, FontStyle.Bold, GraphicsUnit.Point)
+        Label1.ForeColor = Color.White
+        Label1.Location = New Point(640, 1)
+        Label1.Margin = New Padding(4, 0, 4, 0)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(38, 18)
+        Label1.TabIndex = 7
+        Label1.Text = "Genre"
+        ' 
+        ' ListBox1
+        ' 
+        ListBox1.BackColor = Color.Gainsboro
+        Guna2Transition1.SetDecoration(ListBox1, Guna.UI2.AnimatorNS.DecorationType.None)
+        ListBox1.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        ListBox1.FormattingEnabled = True
+        ListBox1.ItemHeight = 21
+        ListBox1.Items.AddRange(New Object() {"Action", "Adventure", "Animation", "Children", "Comedy", "Crime", "Documentary", "Drama", "Fantasy", "Horror", "Musical", "Mystery", "Romance", "Sci-Fi", "Thriller", "War", "Western"})
+        ListBox1.Location = New Point(639, 24)
+        ListBox1.Margin = New Padding(4, 3, 4, 3)
+        ListBox1.Name = "ListBox1"
+        ListBox1.Size = New Size(222, 130)
+        ListBox1.TabIndex = 6
+        ' 
+        ' BtnSrch
+        ' 
+        BtnSrch.Animated = True
+        BtnSrch.AutoRoundedCorners = True
+        BtnSrch.BackColor = Color.Transparent
+        BtnSrch.BorderRadius = 10
+        BtnSrch.CustomBorderThickness = New Padding(32, 0, 0, 0)
+        BtnSrch.CustomizableEdges = CustomizableEdges1
+        Guna2Transition1.SetDecoration(BtnSrch, Guna.UI2.AnimatorNS.DecorationType.None)
+        BtnSrch.DisabledState.BorderColor = Color.DarkGray
+        BtnSrch.DisabledState.CustomBorderColor = Color.DarkGray
+        BtnSrch.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        BtnSrch.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        BtnSrch.FillColor = SystemColors.ControlDarkDark
+        BtnSrch.Font = New Font("Bahnschrift SemiCondensed", 9F, FontStyle.Bold, GraphicsUnit.Point)
+        BtnSrch.ForeColor = Color.White
+        BtnSrch.Location = New Point(419, 130)
+        BtnSrch.Margin = New Padding(4, 3, 4, 3)
+        BtnSrch.Name = "BtnSrch"
+        BtnSrch.ShadowDecoration.CustomizableEdges = CustomizableEdges2
+        BtnSrch.Size = New Size(68, 22)
+        BtnSrch.TabIndex = 15
+        BtnSrch.Text = "Search"
+        ' 
+        ' Guna2TextBox1
+        ' 
+        Guna2TextBox1.AutoRoundedCorners = True
+        Guna2TextBox1.BackColor = Color.Transparent
+        Guna2TextBox1.BorderRadius = 10
+        Guna2TextBox1.CustomizableEdges = CustomizableEdges3
+        Guna2Transition1.SetDecoration(Guna2TextBox1, Guna.UI2.AnimatorNS.DecorationType.None)
+        Guna2TextBox1.DefaultText = ""
+        Guna2TextBox1.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
+        Guna2TextBox1.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
+        Guna2TextBox1.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
+        Guna2TextBox1.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
+        Guna2TextBox1.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
+        Guna2TextBox1.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        Guna2TextBox1.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
+        Guna2TextBox1.IconLeft = CType(resources.GetObject("Guna2TextBox1.IconLeft"), Image)
+        Guna2TextBox1.Location = New Point(59, 131)
+        Guna2TextBox1.Name = "Guna2TextBox1"
+        Guna2TextBox1.PasswordChar = ChrW(0)
+        Guna2TextBox1.PlaceholderText = ""
+        Guna2TextBox1.SelectedText = ""
+        Guna2TextBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges4
+        Guna2TextBox1.Size = New Size(353, 22)
+        Guna2TextBox1.TabIndex = 14
+        ' 
         ' Guna2ContextMenuStrip2
         ' 
+        Guna2Transition1.SetDecoration(Guna2ContextMenuStrip2, Guna.UI2.AnimatorNS.DecorationType.None)
         Guna2ContextMenuStrip2.ImageScalingSize = New Size(24, 24)
         Guna2ContextMenuStrip2.Name = "Guna2ContextMenuStrip2"
         Guna2ContextMenuStrip2.RenderStyle.ArrowColor = Color.FromArgb(CByte(151), CByte(143), CByte(255))
@@ -753,46 +909,170 @@ Partial Class SelectionOfUser
         Guna2ContextMenuStrip2.RenderStyle.TextRenderingHint = Drawing.Text.TextRenderingHint.SystemDefault
         Guna2ContextMenuStrip2.Size = New Size(61, 4)
         ' 
-        ' BtnNewPlylst
+        ' Guna2AnimateWindow1
         ' 
-        BtnNewPlylst.BorderRadius = 10
-        BtnNewPlylst.CustomizableEdges = CustomizableEdges17
-        BtnNewPlylst.DisabledState.BorderColor = Color.DarkGray
-        BtnNewPlylst.DisabledState.CustomBorderColor = Color.DarkGray
-        BtnNewPlylst.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        BtnNewPlylst.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
-        BtnNewPlylst.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
-        BtnNewPlylst.ForeColor = Color.White
-        BtnNewPlylst.Location = New Point(337, 340)
-        BtnNewPlylst.Name = "BtnNewPlylst"
-        BtnNewPlylst.ShadowDecoration.CustomizableEdges = CustomizableEdges18
-        BtnNewPlylst.Size = New Size(78, 45)
-        BtnNewPlylst.TabIndex = 3
-        BtnNewPlylst.Text = "New Playlist"
+        Guna2AnimateWindow1.TargetForm = Me
+        ' 
+        ' Guna2Transition1
+        ' 
+        Guna2Transition1.AnimationType = Guna.UI2.AnimatorNS.AnimationType.Leaf
+        Guna2Transition1.Cursor = Nothing
+        Animation1.AnimateOnlyDifferences = True
+        Animation1.BlindCoeff = CType(resources.GetObject("Animation1.BlindCoeff"), PointF)
+        Animation1.LeafCoeff = 1F
+        Animation1.MaxTime = 1F
+        Animation1.MinTime = 0F
+        Animation1.MosaicCoeff = CType(resources.GetObject("Animation1.MosaicCoeff"), PointF)
+        Animation1.MosaicShift = CType(resources.GetObject("Animation1.MosaicShift"), PointF)
+        Animation1.MosaicSize = 0
+        Animation1.Padding = New Padding(0)
+        Animation1.RotateCoeff = 0F
+        Animation1.RotateLimit = 0F
+        Animation1.ScaleCoeff = CType(resources.GetObject("Animation1.ScaleCoeff"), PointF)
+        Animation1.SlideCoeff = CType(resources.GetObject("Animation1.SlideCoeff"), PointF)
+        Animation1.TimeCoeff = 0F
+        Animation1.TransparencyCoeff = 0F
+        Guna2Transition1.DefaultAnimation = Animation1
+        ' 
+        ' Button1
+        ' 
+        Button1.AllowDrop = True
+        Button1.AutoEllipsis = True
+        Button1.BackColor = Color.SteelBlue
+        Guna2Transition1.SetDecoration(Button1, Guna.UI2.AnimatorNS.DecorationType.None)
+        Button1.FlatStyle = FlatStyle.Popup
+        Button1.Font = New Font("Bahnschrift SemiCondensed", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Button1.ForeColor = Color.Black
+        Button1.Location = New Point(59, 56)
+        Button1.Margin = New Padding(4, 3, 4, 3)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(128, 33)
+        Button1.TabIndex = 9
+        Button1.Text = "HOME"
+        Button1.UseVisualStyleBackColor = False
+        ' 
+        ' Button2
+        ' 
+        Button2.BackColor = Color.SteelBlue
+        Guna2Transition1.SetDecoration(Button2, Guna.UI2.AnimatorNS.DecorationType.None)
+        Button2.FlatStyle = FlatStyle.Popup
+        Button2.Font = New Font("Bahnschrift SemiCondensed", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Button2.ForeColor = Color.Black
+        Button2.Location = New Point(207, 56)
+        Button2.Margin = New Padding(4, 3, 4, 3)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(133, 33)
+        Button2.TabIndex = 10
+        Button2.Text = "BROWSE"
+        Button2.UseVisualStyleBackColor = False
+        ' 
+        ' Button3
+        ' 
+        Button3.BackColor = Color.RosyBrown
+        Guna2Transition1.SetDecoration(Button3, Guna.UI2.AnimatorNS.DecorationType.None)
+        Button3.FlatStyle = FlatStyle.Popup
+        Button3.Font = New Font("Bahnschrift SemiCondensed", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Button3.ForeColor = Color.Black
+        Button3.Location = New Point(665, 56)
+        Button3.Margin = New Padding(4, 3, 4, 3)
+        Button3.Name = "Button3"
+        Button3.Size = New Size(133, 33)
+        Button3.TabIndex = 11
+        Button3.Text = "LOG OUT"
+        Button3.UseVisualStyleBackColor = False
+        ' 
+        ' BtnProfile
+        ' 
+        BtnProfile.BackColor = Color.SteelBlue
+        Guna2Transition1.SetDecoration(BtnProfile, Guna.UI2.AnimatorNS.DecorationType.None)
+        BtnProfile.FlatStyle = FlatStyle.Popup
+        BtnProfile.Font = New Font("Bahnschrift SemiCondensed", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        BtnProfile.ForeColor = Color.Black
+        BtnProfile.Location = New Point(513, 56)
+        BtnProfile.Margin = New Padding(4, 3, 4, 3)
+        BtnProfile.Name = "BtnProfile"
+        BtnProfile.Size = New Size(133, 33)
+        BtnProfile.TabIndex = 12
+        BtnProfile.Text = "PROFILE"
+        BtnProfile.UseVisualStyleBackColor = False
+        ' 
+        ' BtnWtchlst
+        ' 
+        BtnWtchlst.BackColor = Color.SteelBlue
+        Guna2Transition1.SetDecoration(BtnWtchlst, Guna.UI2.AnimatorNS.DecorationType.None)
+        BtnWtchlst.FlatStyle = FlatStyle.Popup
+        BtnWtchlst.Font = New Font("Bahnschrift SemiCondensed", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        BtnWtchlst.ForeColor = Color.Black
+        BtnWtchlst.Location = New Point(359, 56)
+        BtnWtchlst.Margin = New Padding(4, 3, 4, 3)
+        BtnWtchlst.Name = "BtnWtchlst"
+        BtnWtchlst.Size = New Size(133, 33)
+        BtnWtchlst.TabIndex = 13
+        BtnWtchlst.Text = "WATCHLIST"
+        BtnWtchlst.UseVisualStyleBackColor = False
+        ' 
+        ' Guna2PictureBox1
+        ' 
+        Guna2PictureBox1.BackColor = Color.White
+        Guna2PictureBox1.CustomizableEdges = CustomizableEdges37
+        Guna2Transition1.SetDecoration(Guna2PictureBox1, Guna.UI2.AnimatorNS.DecorationType.None)
+        Guna2PictureBox1.ErrorImage = Nothing
+        Guna2PictureBox1.Image = CType(resources.GetObject("Guna2PictureBox1.Image"), Image)
+        Guna2PictureBox1.ImageLocation = ""
+        Guna2PictureBox1.ImageRotate = 0F
+        Guna2PictureBox1.InitialImage = Nothing
+        Guna2PictureBox1.Location = New Point(-3, 27)
+        Guna2PictureBox1.Margin = New Padding(4, 3, 4, 3)
+        Guna2PictureBox1.Name = "Guna2PictureBox1"
+        Guna2PictureBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges38
+        Guna2PictureBox1.Size = New Size(858, 162)
+        Guna2PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
+        Guna2PictureBox1.TabIndex = 19
+        Guna2PictureBox1.TabStop = False
         ' 
         ' SelectionOfUser
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(1031, 550)
-        Controls.Add(Panel1)
+        BackColor = Color.FromArgb(CByte(15), CByte(15), CByte(15))
+        BackgroundImageLayout = ImageLayout.Zoom
+        ClientSize = New Size(858, 546)
+        Controls.Add(Button3)
+        Controls.Add(BtnSrch)
+        Controls.Add(BtnWtchlst)
+        Controls.Add(Guna2TextBox1)
+        Controls.Add(BtnProfile)
         Controls.Add(Guna2ShadowPanel1)
+        Controls.Add(Button2)
+        Controls.Add(Button1)
         Controls.Add(TabWatchlist)
+        Controls.Add(Guna2PictureBox1)
+        Guna2Transition1.SetDecoration(Me, Guna.UI2.AnimatorNS.DecorationType.None)
+        ForeColor = Color.Transparent
         FormBorderStyle = FormBorderStyle.None
+        Margin = New Padding(4, 3, 4, 3)
         Name = "SelectionOfUser"
         Text = "SelectionOfUser"
         Guna2ShadowPanel1.ResumeLayout(False)
-        Panel1.ResumeLayout(False)
+        Guna2ShadowPanel1.PerformLayout()
         TabWatchlist.ResumeLayout(False)
         homeTab.ResumeLayout(False)
         homeTab.PerformLayout()
-        exploreTab.ResumeLayout(False)
-        exploreTab.PerformLayout()
-        CType(Guna2DataGridView1, ComponentModel.ISupportInitialize).EndInit()
+        CType(Guna2PictureBox9, ComponentModel.ISupportInitialize).EndInit()
+        CType(Guna2PictureBox8, ComponentModel.ISupportInitialize).EndInit()
+        CType(Guna2PictureBox6, ComponentModel.ISupportInitialize).EndInit()
+        CType(Guna2PictureBox5, ComponentModel.ISupportInitialize).EndInit()
+        CType(Guna2PictureBox4, ComponentModel.ISupportInitialize).EndInit()
+        CType(Guna2PictureBox3, ComponentModel.ISupportInitialize).EndInit()
+        CType(Guna2PictureBox2, ComponentModel.ISupportInitialize).EndInit()
         TabProfile.ResumeLayout(False)
         TabProfile.PerformLayout()
         Watchlist.ResumeLayout(False)
         CType(Guna2DataGridView2, ComponentModel.ISupportInitialize).EndInit()
+        exploreTab.ResumeLayout(False)
+        exploreTab.PerformLayout()
+        CType(Guna2DataGridView1, ComponentModel.ISupportInitialize).EndInit()
+        CType(Guna2PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
 
@@ -802,24 +1082,15 @@ Partial Class SelectionOfUser
     Friend WithEvents Guna2ControlBox2 As Guna.UI2.WinForms.Guna2ControlBox
     Friend WithEvents Guna2ControlBox1 As Guna.UI2.WinForms.Guna2ControlBox
     Friend WithEvents Guna2ContextMenuStrip1 As Guna.UI2.WinForms.Guna2ContextMenuStrip
-    Friend WithEvents Panel1 As Panel
-    Friend WithEvents Panel2 As Panel
     Friend WithEvents TabWatchlist As TabControl
     Friend WithEvents homeTab As TabPage
     Friend WithEvents exploreTab As TabPage
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button3 As Button
     Friend WithEvents ListBox1 As ListBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents ListBox2 As ListBox
     Friend WithEvents TabProfile As TabPage
     Friend WithEvents Label6 As Label
-    Friend WithEvents BtnProfile As Button
     Friend WithEvents Label7 As Label
     Friend WithEvents TextBox3 As TextBox
     Friend WithEvents Label9 As Label
@@ -834,11 +1105,29 @@ Partial Class SelectionOfUser
     Friend WithEvents Watchlist As TabPage
     Friend WithEvents BtnAddtoW As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2ContextMenuStrip2 As Guna.UI2.WinForms.Guna2ContextMenuStrip
-    Friend WithEvents BtnWtchlst As Button
     Friend WithEvents Guna2Button2 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2DataGridView2 As Guna.UI2.WinForms.Guna2DataGridView
     Friend WithEvents Guna2Button4 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents BtnNewPlylst As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Guna2Transition1 As Guna.UI2.WinForms.Guna2Transition
+    Friend WithEvents Guna2AnimateWindow1 As Guna.UI2.WinForms.Guna2AnimateWindow
+    Friend WithEvents Guna2PictureBox1 As Guna.UI2.WinForms.Guna2PictureBox
+    Friend WithEvents Button3 As Button
+    Friend WithEvents BtnProfile As Button
+    Friend WithEvents BtnWtchlst As Button
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Button1 As Button
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Guna2PictureBox7 As Guna.UI2.WinForms.Guna2PictureBox
+    Friend WithEvents Guna2PictureBox2 As Guna.UI2.WinForms.Guna2PictureBox
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Guna2PictureBox9 As Guna.UI2.WinForms.Guna2PictureBox
+    Friend WithEvents Guna2PictureBox8 As Guna.UI2.WinForms.Guna2PictureBox
+    Friend WithEvents Guna2PictureBox6 As Guna.UI2.WinForms.Guna2PictureBox
+    Friend WithEvents Guna2PictureBox5 As Guna.UI2.WinForms.Guna2PictureBox
+    Friend WithEvents Guna2PictureBox4 As Guna.UI2.WinForms.Guna2PictureBox
+    Friend WithEvents Guna2PictureBox3 As Guna.UI2.WinForms.Guna2PictureBox
 End Class

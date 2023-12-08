@@ -23,19 +23,21 @@ Partial Class LoginPage
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         components = New ComponentModel.Container()
-        Dim CustomizableEdges9 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges10 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges11 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges12 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges5 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges6 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges3 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges4 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges7 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges8 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges9 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges10 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges5 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges6 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges11 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges12 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges3 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges4 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(LoginPage))
+        Dim CustomizableEdges13 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges14 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(LoginPage))
         Guna2BorderlessForm1 = New Guna.UI2.WinForms.Guna2BorderlessForm(components)
         Guna2ShadowPanel1 = New Guna.UI2.WinForms.Guna2ShadowPanel()
         Guna2ControlBox2 = New Guna.UI2.WinForms.Guna2ControlBox()
@@ -44,13 +46,12 @@ Partial Class LoginPage
         userTxtbx = New Guna.UI2.WinForms.Guna2TextBox()
         Guna2Button2 = New Guna.UI2.WinForms.Guna2Button()
         Label2 = New Label()
-        Guna2ShadowPanel2 = New Guna.UI2.WinForms.Guna2ShadowPanel()
         txtbxpassword = New Guna.UI2.WinForms.Guna2TextBox()
         CheckBox1 = New CheckBox()
-        Label3 = New Label()
         Guna2DragControl1 = New Guna.UI2.WinForms.Guna2DragControl(components)
+        Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
         Guna2ShadowPanel1.SuspendLayout()
-        Guna2ShadowPanel2.SuspendLayout()
+        CType(Guna2PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Guna2BorderlessForm1
@@ -78,24 +79,24 @@ Partial Class LoginPage
         ' 
         Guna2ControlBox2.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         Guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox
-        Guna2ControlBox2.CustomizableEdges = CustomizableEdges9
+        Guna2ControlBox2.CustomizableEdges = CustomizableEdges7
         Guna2ControlBox2.FillColor = Color.Transparent
         Guna2ControlBox2.IconColor = Color.DimGray
         Guna2ControlBox2.Location = New Point(743, 3)
         Guna2ControlBox2.Name = "Guna2ControlBox2"
-        Guna2ControlBox2.ShadowDecoration.CustomizableEdges = CustomizableEdges10
+        Guna2ControlBox2.ShadowDecoration.CustomizableEdges = CustomizableEdges8
         Guna2ControlBox2.Size = New Size(24, 24)
         Guna2ControlBox2.TabIndex = 1
         ' 
         ' Guna2ControlBox1
         ' 
         Guna2ControlBox1.Anchor = AnchorStyles.Top Or AnchorStyles.Right
-        Guna2ControlBox1.CustomizableEdges = CustomizableEdges11
+        Guna2ControlBox1.CustomizableEdges = CustomizableEdges9
         Guna2ControlBox1.FillColor = Color.Transparent
         Guna2ControlBox1.IconColor = Color.DimGray
         Guna2ControlBox1.Location = New Point(773, 3)
         Guna2ControlBox1.Name = "Guna2ControlBox1"
-        Guna2ControlBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges12
+        Guna2ControlBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges10
         Guna2ControlBox1.Size = New Size(24, 24)
         Guna2ControlBox1.TabIndex = 0
         ' 
@@ -112,7 +113,7 @@ Partial Class LoginPage
         Guna2Button1.FillColor = Color.Gray
         Guna2Button1.Font = New Font("Bahnschrift", 9F, FontStyle.Bold, GraphicsUnit.Point)
         Guna2Button1.ForeColor = Color.White
-        Guna2Button1.Location = New Point(62, 210)
+        Guna2Button1.Location = New Point(73, 260)
         Guna2Button1.Name = "Guna2Button1"
         Guna2Button1.ShadowDecoration.CustomizableEdges = CustomizableEdges6
         Guna2Button1.Size = New Size(169, 41)
@@ -124,8 +125,8 @@ Partial Class LoginPage
         userTxtbx.AutoRoundedCorners = True
         userTxtbx.BackColor = Color.Transparent
         userTxtbx.BorderRadius = 13
-        userTxtbx.CustomizableEdges = CustomizableEdges3
-        userTxtbx.DefaultText = ""
+        userTxtbx.CustomizableEdges = CustomizableEdges11
+        userTxtbx.DefaultText = "username"
         userTxtbx.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
         userTxtbx.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
         userTxtbx.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
@@ -134,13 +135,12 @@ Partial Class LoginPage
         userTxtbx.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
         userTxtbx.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
         userTxtbx.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        userTxtbx.IconLeft = My.Resources.Resources.user
-        userTxtbx.Location = New Point(62, 117)
+        userTxtbx.Location = New Point(73, 125)
         userTxtbx.Name = "userTxtbx"
         userTxtbx.PasswordChar = ChrW(0)
         userTxtbx.PlaceholderText = ""
         userTxtbx.SelectedText = ""
-        userTxtbx.ShadowDecoration.CustomizableEdges = CustomizableEdges4
+        userTxtbx.ShadowDecoration.CustomizableEdges = CustomizableEdges12
         userTxtbx.Size = New Size(169, 29)
         userTxtbx.TabIndex = 2
         ' 
@@ -151,7 +151,7 @@ Partial Class LoginPage
         Guna2Button2.BorderRadius = 19
         Guna2Button2.BorderStyle = Drawing2D.DashStyle.Dot
         Guna2Button2.BorderThickness = 1
-        Guna2Button2.CustomizableEdges = CustomizableEdges7
+        Guna2Button2.CustomizableEdges = CustomizableEdges3
         Guna2Button2.DisabledState.BorderColor = Color.DarkGray
         Guna2Button2.DisabledState.CustomBorderColor = Color.DarkGray
         Guna2Button2.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
@@ -159,9 +159,9 @@ Partial Class LoginPage
         Guna2Button2.FillColor = Color.Transparent
         Guna2Button2.Font = New Font("Bahnschrift", 9F, FontStyle.Bold, GraphicsUnit.Point)
         Guna2Button2.ForeColor = Color.White
-        Guna2Button2.Location = New Point(619, 397)
+        Guna2Button2.Location = New Point(73, 375)
         Guna2Button2.Name = "Guna2Button2"
-        Guna2Button2.ShadowDecoration.CustomizableEdges = CustomizableEdges8
+        Guna2Button2.ShadowDecoration.CustomizableEdges = CustomizableEdges4
         Guna2Button2.Size = New Size(169, 41)
         Guna2Button2.TabIndex = 5
         Guna2Button2.Text = "CREATE ACCOUNT"
@@ -169,30 +169,14 @@ Partial Class LoginPage
         ' Label2
         ' 
         Label2.AutoSize = True
+        Label2.BackColor = Color.Transparent
         Label2.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point)
         Label2.ForeColor = Color.FromArgb(CByte(255), CByte(192), CByte(192))
-        Label2.Location = New Point(89, 254)
+        Label2.Location = New Point(97, 304)
         Label2.Name = "Label2"
         Label2.Size = New Size(114, 17)
         Label2.TabIndex = 7
         Label2.Text = "Forgot password?"
-        ' 
-        ' Guna2ShadowPanel2
-        ' 
-        Guna2ShadowPanel2.BackColor = Color.Transparent
-        Guna2ShadowPanel2.Controls.Add(txtbxpassword)
-        Guna2ShadowPanel2.Controls.Add(CheckBox1)
-        Guna2ShadowPanel2.Controls.Add(Label3)
-        Guna2ShadowPanel2.Controls.Add(userTxtbx)
-        Guna2ShadowPanel2.Controls.Add(Label2)
-        Guna2ShadowPanel2.Controls.Add(Guna2Button1)
-        Guna2ShadowPanel2.FillColor = Color.Transparent
-        Guna2ShadowPanel2.Location = New Point(0, 29)
-        Guna2ShadowPanel2.Name = "Guna2ShadowPanel2"
-        Guna2ShadowPanel2.ShadowColor = Color.Black
-        Guna2ShadowPanel2.ShadowDepth = 55
-        Guna2ShadowPanel2.Size = New Size(289, 422)
-        Guna2ShadowPanel2.TabIndex = 8
         ' 
         ' txtbxpassword
         ' 
@@ -200,7 +184,7 @@ Partial Class LoginPage
         txtbxpassword.BackColor = Color.Transparent
         txtbxpassword.BorderRadius = 13
         txtbxpassword.CustomizableEdges = CustomizableEdges1
-        txtbxpassword.DefaultText = ""
+        txtbxpassword.DefaultText = "password"
         txtbxpassword.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
         txtbxpassword.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
         txtbxpassword.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
@@ -209,8 +193,7 @@ Partial Class LoginPage
         txtbxpassword.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
         txtbxpassword.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
         txtbxpassword.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        txtbxpassword.IconLeft = My.Resources.Resources.visible
-        txtbxpassword.Location = New Point(62, 152)
+        txtbxpassword.Location = New Point(73, 160)
         txtbxpassword.Name = "txtbxpassword"
         txtbxpassword.PasswordChar = ChrW(0)
         txtbxpassword.PlaceholderText = ""
@@ -222,30 +205,35 @@ Partial Class LoginPage
         ' CheckBox1
         ' 
         CheckBox1.AutoSize = True
+        CheckBox1.BackColor = Color.Transparent
         CheckBox1.ForeColor = SystemColors.ButtonHighlight
-        CheckBox1.Location = New Point(74, 187)
+        CheckBox1.Location = New Point(103, 195)
         CheckBox1.Name = "CheckBox1"
         CheckBox1.Size = New Size(108, 19)
         CheckBox1.TabIndex = 11
         CheckBox1.Text = "Show Password"
-        CheckBox1.UseVisualStyleBackColor = True
-        ' 
-        ' Label3
-        ' 
-        Label3.AutoSize = True
-        Label3.Font = New Font("Bradley Hand ITC", 24F, FontStyle.Bold, GraphicsUnit.Point)
-        Label3.ForeColor = SystemColors.ButtonHighlight
-        Label3.Location = New Point(89, 53)
-        Label3.Name = "Label3"
-        Label3.Size = New Size(117, 40)
-        Label3.TabIndex = 8
-        Label3.Text = "B FLIX"
+        CheckBox1.UseVisualStyleBackColor = False
         ' 
         ' Guna2DragControl1
         ' 
         Guna2DragControl1.DockIndicatorTransparencyValue = 0.6R
         Guna2DragControl1.TargetControl = Guna2ShadowPanel1
         Guna2DragControl1.UseTransparentDrag = True
+        ' 
+        ' Guna2PictureBox2
+        ' 
+        Guna2PictureBox2.CustomizableEdges = CustomizableEdges13
+        Guna2PictureBox2.ErrorImage = Nothing
+        Guna2PictureBox2.Image = CType(resources.GetObject("Guna2PictureBox2.Image"), Image)
+        Guna2PictureBox2.ImageRotate = 0F
+        Guna2PictureBox2.InitialImage = Nothing
+        Guna2PictureBox2.Location = New Point(0, 24)
+        Guna2PictureBox2.Name = "Guna2PictureBox2"
+        Guna2PictureBox2.ShadowDecoration.CustomizableEdges = CustomizableEdges14
+        Guna2PictureBox2.Size = New Size(800, 425)
+        Guna2PictureBox2.SizeMode = PictureBoxSizeMode.StretchImage
+        Guna2PictureBox2.TabIndex = 14
+        Guna2PictureBox2.TabStop = False
         ' 
         ' LoginPage
         ' 
@@ -254,16 +242,22 @@ Partial Class LoginPage
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(800, 450)
-        Controls.Add(Guna2ShadowPanel2)
+        Controls.Add(CheckBox1)
+        Controls.Add(Label2)
+        Controls.Add(txtbxpassword)
         Controls.Add(Guna2Button2)
+        Controls.Add(Guna2Button1)
         Controls.Add(Guna2ShadowPanel1)
+        Controls.Add(userTxtbx)
+        Controls.Add(Guna2PictureBox2)
+        DoubleBuffered = True
         FormBorderStyle = FormBorderStyle.None
         Name = "LoginPage"
         Text = "LoginPage"
         Guna2ShadowPanel1.ResumeLayout(False)
-        Guna2ShadowPanel2.ResumeLayout(False)
-        Guna2ShadowPanel2.PerformLayout()
+        CType(Guna2PictureBox2, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
+        PerformLayout()
     End Sub
 
     Friend WithEvents Guna2BorderlessForm1 As Guna.UI2.WinForms.Guna2BorderlessForm
@@ -272,11 +266,10 @@ Partial Class LoginPage
     Friend WithEvents Guna2Button2 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents userTxtbx As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Guna2ShadowPanel2 As Guna.UI2.WinForms.Guna2ShadowPanel
-    Friend WithEvents Label3 As Label
     Friend WithEvents Guna2ControlBox2 As Guna.UI2.WinForms.Guna2ControlBox
     Friend WithEvents Guna2ControlBox1 As Guna.UI2.WinForms.Guna2ControlBox
     Friend WithEvents Guna2DragControl1 As Guna.UI2.WinForms.Guna2DragControl
     Friend WithEvents CheckBox1 As CheckBox
     Friend WithEvents txtbxpassword As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents Guna2PictureBox2 As Guna.UI2.WinForms.Guna2PictureBox
 End Class

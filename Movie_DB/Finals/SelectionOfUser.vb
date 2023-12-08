@@ -43,12 +43,14 @@ Public Class SelectionOfUser
                     TabWatchlist.SelectedTab = exploreTab
                 Case "BtnProfile"
                     TabWatchlist.SelectedTab = TabProfile
-                Case "BtnWtchlst"
+                Case "BtnWatchlst"
                     TabWatchlist.SelectedTab = Watchlist
             End Select
         Catch ex As Exception
 
         End Try
+
+
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
@@ -172,8 +174,7 @@ Public Class SelectionOfUser
 
         Dim query As String = "INSERT INTO playlists (name) VALUES (@name)"
         Using cmd As New MySqlCommand(query, myConnection)
-            cmd.Parameters.AddWithValue("@name", playlist_name)
-            cmd.ExecuteNonQuery()
+
         End Using
 
     End Sub
@@ -220,6 +221,10 @@ Public Class SelectionOfUser
     End Sub
 
     Private Sub BtnNewPlylst_Click(sender As Object, e As EventArgs) Handles BtnNewPlylst.Click
-        CreatePlaylist()
+
+    End Sub
+
+    Private Sub Guna2DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles Guna2DataGridView1.CellContentClick
+
     End Sub
 End Class
