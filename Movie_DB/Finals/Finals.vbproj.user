@@ -28,5 +28,8 @@
     <Compile Update="SelectionOfUser.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="watchlist form.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>
