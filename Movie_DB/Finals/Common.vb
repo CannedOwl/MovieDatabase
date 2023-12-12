@@ -9,7 +9,7 @@ Public Class Common
                "Database=moviedatabase;" &
                      "Data Source=localhost;" &
                     "User id= root;" &
-                    "Password= kierronB24#;" &
+                    "Password= #Monster1472;" &
                     "Port=3306;Command TimeOut=600;")
         Return myDBConnection
     End Function

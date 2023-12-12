@@ -244,3 +244,5 @@ C:\Users\kierron\Documents\GitHub\MovieDatabase\Movie_DB\Finals\bin\Debug\net6.0
 C:\Users\kierron\Documents\GitHub\MovieDatabase\Movie_DB\Finals\obj\Debug\net6.0-windows\Finals.vbproj.CopyComplete
 C:\Users\kierron\Documents\GitHub\MovieDatabase\Movie_DB\Finals\obj\Debug\net6.0-windows\Finals.genruntimeconfig.cache
 C:\Users\kierron\Documents\GitHub\MovieDatabase\Movie_DB\Finals\obj\Debug\net6.0-windows\ref\Finals.dll
+D:\repo\Finals\MovieDatabase\Movie_DB\Finals\obj\Debug\net6.0-windows\Finals.AddmovietoPlaylist.resources
+D:\repo\Finals\MovieDatabase\Movie_DB\Finals\obj\Debug\net6.0-windows\Finals.watchlist_form.resources

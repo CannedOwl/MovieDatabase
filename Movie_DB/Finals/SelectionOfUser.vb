@@ -4,12 +4,13 @@ Imports MySql.Data.MySqlClient
 Imports Mysqlx
 Imports System.Data
 Imports System.Windows.Forms
+Imports Microsoft.VisualBasic.ApplicationServices
 
 
 Public Class SelectionOfUser
+
     'Getting the Values from the LoginPage
     Private _username As String
-
     Public Property Username() As String
         Get
             Return _username
@@ -18,7 +19,65 @@ Public Class SelectionOfUser
             _username = value
         End Set
     End Property
-    Private Sub SelectionOfUser_Load_1(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private inputData As Integer
+
+    Dim usernameValue As String = Me.Username
+
+    Function GetUserId(userName As String) As Integer
+        Dim myConnection As MySqlConnection
+        Dim usernameValue As String = Me.Username
+        myConnection = Common.getDBConnectionX()
+
+        Dim query As String = "SELECT users_no FROM tblusers WHERE userName = @userName"
+        Dim userId As Integer = -1
+
+        Using cmd As New MySqlCommand(query, myConnection)
+            cmd.Parameters.AddWithValue("@userName", usernameValue)
+            Try
+                myConnection.Open()
+                userId = Convert.ToInt32(cmd.ExecuteScalar())
+            Catch ex As Exception
+                MessageBox.Show(ex.Message)
+            Finally
+                myConnection.Close()
+            End Try
+        End Using
+
+        Return userId
+    End Function
+    Public Sub Display_playlists()
+        Dim myConnection1 As MySqlConnection
+        Dim myCommand1 As MySqlCommand
+        Dim myAdapter2 As New MySqlDataAdapter
+        Dim myDataSet2 As New DataSet
+        Dim userId As Integer = GetUserId(usernameValue)
+        myConnection1 = Common.getDBConnectionX()
+
+        Try
+            myConnection1.Open()
+            myCommand1 = New MySqlCommand("SELECT tb1.playlist_name 
+                                            FROM playlists tb1
+                                            JOIN tblusers tb2 on tb1.users_no = tb2.users_no
+                                            WHERE tb2.users_no = " & (userId), myConnection1)
+
+
+
+            myAdapter2.SelectCommand = myCommand1
+            myAdapter2.Fill(myDataSet2, "myData")
+            'eto magpapashow ng data
+            dataGridViewPlaylist.DataSource = myDataSet2.Tables("myData")
+
+        Catch ex As Exception
+            MsgBox(Err.Description)
+            Exit Sub
+        Finally
+            myConnection1.Close()
+        End Try
+
+    End Sub
+
+
+    Public Sub SelectionOfUser_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
             TabWatchlist.Appearance = TabAppearance.FlatButtons
             TabWatchlist.ItemSize = New Size(0, 1)
@@ -27,8 +86,7 @@ Public Class SelectionOfUser
         Catch ex As Exception
 
         End Try
-
-
+        Display_playlists()
     End Sub
 
     'Side Menu Buttons
@@ -43,14 +101,12 @@ Public Class SelectionOfUser
                     TabWatchlist.SelectedTab = exploreTab
                 Case "BtnProfile"
                     TabWatchlist.SelectedTab = TabProfile
-                Case "BtnWatchlst"
+                Case "BtnWtchlst"
                     TabWatchlist.SelectedTab = Watchlist
             End Select
         Catch ex As Exception
 
         End Try
-
-
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
@@ -79,12 +135,12 @@ Public Class SelectionOfUser
         Try
 
             myConnection1.Open()
-            myCommand1 = New MySqlCommand("SELECT title, year, genre FROM tblmovie WHERE title LIKE '" & (mtitle) & "%'", myConnection1)
+            myCommand1 = New MySqlCommand("SELECT movie_no, original_title, genre, released_year FROM tblmovies WHERE genre LIKE '%" & (mtitle) & "%'", myConnection1)
 
             myAdapter2.SelectCommand = myCommand1
             myAdapter2.Fill(myDataSet2, "myData")
             'eto magpapashow ng data
-            Guna2DataGridView1.DataSource = myDataSet2.Tables("myData")
+            dataGridViewPlaylist.DataSource = myDataSet2.Tables("myData")
 
         Catch ex As Exception
             MsgBox(Err.Description)
@@ -94,6 +150,8 @@ Public Class SelectionOfUser
         End Try
 
     End Sub
+    'Function to display playlist
+
 
 
     'Filter Search
@@ -115,18 +173,18 @@ Public Class SelectionOfUser
 
     Private Sub DisplayMoviesByGenreAndSelectedYear(selectedGenre As String, selectedYear As String)
 
-        Dim query As String = "SELECT title, genre, year FROM tblmovie WHERE genre LIKE @selectedGenre AND year LIKE @selectedYear"
-        DisplayMovies(query, "%" & selectedGenre & "%", selectedYear)
+        Dim query As String = "SELECT movie_no, original_title, genre, released_year FROM tblmovies WHERE genre LIKE @selectedGenre AND released_year LIKE @selectedYear"
+        DisplayMovies(query, "'%" & selectedGenre & "%'", "'%" & selectedYear & "%'")
     End Sub
 
     Private Sub DisplayMoviesByGenre(selectedGenre As String)
-        Dim query As String = "SELECT title, genre, year FROM tblmovie WHERE genre LIKE @selectedGenre"
-        DisplayMovies(query, "%" & selectedGenre & "%")
+        Dim query As String = "SELECT movie_no, original_title, genre, released_year FROM tblmovies WHERE genre LIKE @selectedGenre"
+        DisplayMovies(query, "'%" & selectedGenre & "%'")
     End Sub
 
     Private Sub DisplayMoviesByReleaseDate(selectedYear As String)
-        Dim query As String = "SELECT title, genre, year FROM tblmovie WHERE year LIKE " & selectedYear
-        DisplayMovies(query, "%" & selectedYear & "%")
+        Dim query As String = "SELECT movie_no,original_title, genre, released_year FROM tblmovies WHERE released_year LIKE " & selectedYear
+        DisplayMovies(query, "'%" & selectedYear & "%'")
     End Sub
 
     Private Sub DisplayMovies(query As String, ParamArray parameters() As String)
@@ -146,7 +204,8 @@ Public Class SelectionOfUser
             Using adapter As New MySqlDataAdapter(command)
                 Dim dataTable As New DataTable()
                 adapter.Fill(dataTable)
-                Guna2DataGridView1.DataSource = dataTable
+                dataGridViewPlaylist.DataSource = dataTable
+                dataGridViewPlaylist.Columns("movie_no").Visible = False
             End Using
         End Using
     End Sub
@@ -166,50 +225,7 @@ Public Class SelectionOfUser
 
     Dim myConnection As MySqlConnection
 
-    Public Sub CreatePlaylist(name As String)
-
-        myConnection = Common.getDBConnectionX()
-
-        myConnection.Open()
-
-        Dim query As String = "INSERT INTO playlists (name) VALUES (@name)"
-        Using cmd As New MySqlCommand(query, myConnection)
-
-        End Using
-
-    End Sub
-
-    Public Sub AddMovieToPlaylist(playlistId As Integer, movieId As Integer)
-        Using connection As New MySqlConnection()
-            connection.Open()
-
-            Dim query As String = "INSERT INTO playlist_movies (playlist_id, movie_id) VALUES (@playlistId, @movieId)"
-            Using cmd As New MySqlCommand(query, connection)
-                cmd.Parameters.AddWithValue("@playlistId", playlistId)
-                cmd.Parameters.AddWithValue("@movieId", movieId)
-                cmd.ExecuteNonQuery()
-            End Using
-        End Using
-    End Sub
-
-    Public Function GetMoviesByPlaylist(playlistId As Integer) As DataTable
-        Dim dataTable As New DataTable()
-
-        Using connection As New MySqlConnection()
-            connection.Open()
-
-            Dim query As String = "SELECT m.* FROM movies m INNER JOIN playlist_movies pm ON m.movie_id = pm.movie_id WHERE pm.playlist_id = @playlistId"
-            Using cmd As New MySqlCommand(query, connection)
-                cmd.Parameters.AddWithValue("@playlistId", playlistId)
-                Using adapter As New MySqlDataAdapter(cmd)
-                    adapter.Fill(dataTable)
-                End Using
-            End Using
-        End Using
-
-        Return dataTable
-    End Function
-
+    'LABEL TESTING TO BE WORKED ON *GUMAGANA SIYA
     Private Sub Guna2Button1_Click_1(sender As Object, e As EventArgs) Handles Guna2Button1.Click
         ' Access the username value
         Dim usernameValue As String = Me.Username
@@ -220,11 +236,31 @@ Public Class SelectionOfUser
 
     End Sub
 
-    Private Sub BtnNewPlylst_Click(sender As Object, e As EventArgs) Handles BtnNewPlylst.Click
+    ' Property to store the selected data
+    '===============================================================
 
+
+
+
+    Private Sub BtnAddtoW_Click(sender As Object, e As EventArgs) Handles BtnAddtoW.Click
+
+        If dataGridViewPlaylist.SelectedRows.Count > 0 Then
+
+            Dim selectedMovieIds As New List(Of Integer)
+
+            For Each row As DataGridViewRow In dataGridViewPlaylist.SelectedRows
+                selectedMovieIds.Add(CInt(row.Cells("movie_no").Value))
+            Next
+
+            Dim playlistForm As New AddmovietoPlaylist(selectedMovieIds)
+            playlistForm.ShowDialog()
+        Else
+            MessageBox.Show("Please select at least one movie.")
+        End If
     End Sub
 
-    Private Sub Guna2DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles Guna2DataGridView1.CellContentClick
 
-    End Sub
+    Private selectedRows As New List(Of DataGridViewRow)
+
+
 End Class

@@ -28,7 +28,7 @@
           }
         }
       },
-      "Guna.UI2.WinForms/2.0.4.5": {
+      "Guna.UI2.WinForms/2.0.4.6": {
         "type": "package",
         "dependencies": {
           "System.Management": "6.0.0"
@@ -193,7 +193,7 @@
           }
         }
       },
-      "MySqlConnector/2.3.0": {
+      "MySqlConnector/2.3.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Logging.Abstractions": "7.0.1",
@@ -678,16 +678,16 @@
         "lib/netstandard2.0/Google.Protobuf.xml"
       ]
     },
-    "Guna.UI2.WinForms/2.0.4.5": {
-      "sha512": "lR50db4NzBC0QLAr27q9nrpYsIfWKjOgGnROrPi8AxbwLFE3nTup6ZOpVE/vbrr86eLV//8ys9sIW7j0ix2h+Q==",
+    "Guna.UI2.WinForms/2.0.4.6": {
+      "sha512": "NYzSJp7e47Cz3NgGCHvzadash8ycmxxUnpLg4Rr/MSYG9WDw0HOoTI4SkbDW+HbACrf6tsWYCuzWkgvjuM/O6w==",
       "type": "package",
-      "path": "guna.ui2.winforms/2.0.4.5",
+      "path": "guna.ui2.winforms/2.0.4.6",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.txt",
         "README.md",
-        "guna.ui2.winforms.2.0.4.5.nupkg.sha512",
+        "guna.ui2.winforms.2.0.4.6.nupkg.sha512",
         "guna.ui2.winforms.nuspec",
         "icon.png",
         "lib/net40/Guna.UI2.dll",
@@ -925,10 +925,10 @@
         "runtimes/win-x64/native/krbcc64.dll"
       ]
     },
-    "MySqlConnector/2.3.0": {
-      "sha512": "CpW2vvPvqfjSR8MIhRTjoM7xoR3fzRbO4b8EAcjIfPv8/ecVmFItJkDmZ9wkHsiiL0XSUCOmxCmdYBEla616PQ==",
+    "MySqlConnector/2.3.1": {
+      "sha512": "FYTnvNBbNSZotSWUerK22Ztsc3vx3wBRZ4veavkUbfCBNthtCr3CH5Wpoo4l5gBD2TmQD9JbL33Gf9kWko1yYw==",
       "type": "package",
-      "path": "mysqlconnector/2.3.0",
+      "path": "mysqlconnector/2.3.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -950,7 +950,7 @@
         "lib/netstandard2.1/MySqlConnector.dll",
         "lib/netstandard2.1/MySqlConnector.xml",
         "logo.png",
-        "mysqlconnector.2.3.0.nupkg.sha512",
+        "mysqlconnector.2.3.1.nupkg.sha512",
         "mysqlconnector.nuspec"
       ]
     },
@@ -2049,30 +2049,25 @@
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
-      "Guna.UI2.WinForms >= 2.0.4.5",
+      "Guna.UI2.WinForms >= 2.0.4.6",
       "MySql.Data >= 8.2.0",
-      "MySqlConnector >= 2.3.0"
+      "MySqlConnector >= 2.3.1"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\kierron\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Dominic\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kierron\\Documents\\GitHub\\MovieDatabase\\Movie_DB\\Finals\\Finals.vbproj",
+      "projectUniqueName": "D:\\repo\\Finals\\MovieDatabase\\Movie_DB\\Finals\\Finals.vbproj",
       "projectName": "Finals",
-      "projectPath": "C:\\Users\\kierron\\Documents\\GitHub\\MovieDatabase\\Movie_DB\\Finals\\Finals.vbproj",
-      "packagesPath": "C:\\Users\\kierron\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kierron\\Documents\\GitHub\\MovieDatabase\\Movie_DB\\Finals\\obj\\",
+      "projectPath": "D:\\repo\\Finals\\MovieDatabase\\Movie_DB\\Finals\\Finals.vbproj",
+      "packagesPath": "C:\\Users\\Dominic\\.nuget\\packages\\",
+      "outputPath": "D:\\repo\\Finals\\MovieDatabase\\Movie_DB\\Finals\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\kierron\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Dominic\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2100,7 +2095,7 @@
         "dependencies": {
           "Guna.UI2.WinForms": {
             "target": "Package",
-            "version": "[2.0.4.5, )"
+            "version": "[2.0.4.6, )"
           },
           "MySql.Data": {
             "target": "Package",
@@ -2108,7 +2103,7 @@
           },
           "MySqlConnector": {
             "target": "Package",
-            "version": "[2.3.0, )"
+            "version": "[2.3.1, )"
           }
         },
         "imports": [
@@ -2130,7 +2125,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

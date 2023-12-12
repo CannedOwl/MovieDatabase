@@ -1,4 +1,6 @@
-﻿Imports Guna.UI2.WinForms
+﻿
+Imports System.Windows.Forms.VisualStyles.VisualStyleElement
+Imports Guna.UI2.WinForms
 Imports MySql.Data.MySqlClient
 Imports Mysqlx
 Public Class LoginPage
@@ -23,6 +25,7 @@ Public Class LoginPage
     End Sub
 
 
+
     'Login Function'
     Sub login()
         ' Set the Username property with the value from the TextBox in Form1
@@ -32,7 +35,13 @@ Public Class LoginPage
         Dim username As String = userTxtbx.Text
         Dim password As String = txtbxpassword.Text
 
+
         SelectionOfUser.Username = userTxtbx.Text
+        watchlist_form.Username = userTxtbx.Text
+        'AddmovietoPlaylist.Username = userTxtbx.Text
+
+
+
         myConnectionx = Common.getDBConnectionX()
 
         myConnectionx.Open()
@@ -49,13 +58,18 @@ Public Class LoginPage
             Me.Hide()
             SelectionOfUser.Show()
             SelectionOfUser.Focus()
+
         Else
             MessageBox.Show("INVALID USERNAME OR PASSWORD")
 
         End If
 
     End Sub
-
+    Public ReadOnly Property TextBoxData As String
+        Get
+            Return userTxtbx.Text ' Assuming TextBox1 is the name of your TextBox
+        End Get
+    End Property
     Private Sub Guna2Button2_Click(sender As Object, e As EventArgs) Handles Guna2Button2.Click
         ' Create an instance of Form2
         Dim register As New CreateAccount()
@@ -66,3 +80,10 @@ Public Class LoginPage
 
 
 End Class
+'=======================================================================================================================
+
+
+
+
+
+

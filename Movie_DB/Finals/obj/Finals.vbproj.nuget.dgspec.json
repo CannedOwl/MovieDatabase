@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kierron\\Documents\\GitHub\\MovieDatabase\\Movie_DB\\Finals\\Finals.vbproj": {}
+    "D:\\repo\\Finals\\MovieDatabase\\Movie_DB\\Finals\\Finals.vbproj": {}
   },
   "projects": {
-    "C:\\Users\\kierron\\Documents\\GitHub\\MovieDatabase\\Movie_DB\\Finals\\Finals.vbproj": {
+    "D:\\repo\\Finals\\MovieDatabase\\Movie_DB\\Finals\\Finals.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kierron\\Documents\\GitHub\\MovieDatabase\\Movie_DB\\Finals\\Finals.vbproj",
+        "projectUniqueName": "D:\\repo\\Finals\\MovieDatabase\\Movie_DB\\Finals\\Finals.vbproj",
         "projectName": "Finals",
-        "projectPath": "C:\\Users\\kierron\\Documents\\GitHub\\MovieDatabase\\Movie_DB\\Finals\\Finals.vbproj",
-        "packagesPath": "C:\\Users\\kierron\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kierron\\Documents\\GitHub\\MovieDatabase\\Movie_DB\\Finals\\obj\\",
+        "projectPath": "D:\\repo\\Finals\\MovieDatabase\\Movie_DB\\Finals\\Finals.vbproj",
+        "packagesPath": "C:\\Users\\Dominic\\.nuget\\packages\\",
+        "outputPath": "D:\\repo\\Finals\\MovieDatabase\\Movie_DB\\Finals\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\kierron\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Dominic\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -46,7 +42,7 @@
           "dependencies": {
             "Guna.UI2.WinForms": {
               "target": "Package",
-              "version": "[2.0.4.5, )"
+              "version": "[2.0.4.6, )"
             },
             "MySql.Data": {
               "target": "Package",
@@ -54,7 +50,7 @@
             },
             "MySqlConnector": {
               "target": "Package",
-              "version": "[2.3.0, )"
+              "version": "[2.3.1, )"
             }
           },
           "imports": [
@@ -76,7 +72,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

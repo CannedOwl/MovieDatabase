@@ -52,14 +52,13 @@ Partial Class SelectionOfUser
         Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As DataGridViewCellStyle = New DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As DataGridViewCellStyle = New DataGridViewCellStyle()
         Dim CustomizableEdges31 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges32 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges33 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges34 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim DataGridViewCellStyle4 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle7 As DataGridViewCellStyle = New DataGridViewCellStyle()
         Dim CustomizableEdges35 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges36 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
@@ -67,7 +66,7 @@ Partial Class SelectionOfUser
         Dim CustomizableEdges3 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges4 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim Animation1 As Guna.UI2.AnimatorNS.Animation = New Guna.UI2.AnimatorNS.Animation()
-        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(SelectionOfUser))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(SelectionOfUser))
         Dim CustomizableEdges37 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges38 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Guna2BorderlessForm1 = New Guna.UI2.WinForms.Guna2BorderlessForm(components)
@@ -103,9 +102,9 @@ Partial Class SelectionOfUser
         Guna2Button2 = New Guna.UI2.WinForms.Guna2Button()
         Guna2DataGridView2 = New Guna.UI2.WinForms.Guna2DataGridView()
         exploreTab = New TabPage()
+        dataGridViewPlaylist = New Guna.UI2.WinForms.Guna2DataGridView()
         Guna2Button3 = New Guna.UI2.WinForms.Guna2Button()
         GbtnFS = New Guna.UI2.WinForms.Guna2Button()
-        Guna2DataGridView1 = New Guna.UI2.WinForms.Guna2DataGridView()
         Label5 = New Label()
         ListBox2 = New ListBox()
         BtnAddtoW = New Guna.UI2.WinForms.Guna2Button()
@@ -136,7 +135,7 @@ Partial Class SelectionOfUser
         Watchlist.SuspendLayout()
         CType(Guna2DataGridView2, ComponentModel.ISupportInitialize).BeginInit()
         exploreTab.SuspendLayout()
-        CType(Guna2DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dataGridViewPlaylist, ComponentModel.ISupportInitialize).BeginInit()
         CType(Guna2PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
@@ -641,9 +640,9 @@ Partial Class SelectionOfUser
         ' 
         exploreTab.BackColor = Color.FromArgb(CByte(15), CByte(15), CByte(15))
         exploreTab.BackgroundImageLayout = ImageLayout.Stretch
+        exploreTab.Controls.Add(dataGridViewPlaylist)
         exploreTab.Controls.Add(Guna2Button3)
         exploreTab.Controls.Add(GbtnFS)
-        exploreTab.Controls.Add(Guna2DataGridView1)
         exploreTab.Controls.Add(Label5)
         exploreTab.Controls.Add(ListBox2)
         exploreTab.Controls.Add(BtnAddtoW)
@@ -657,6 +656,58 @@ Partial Class SelectionOfUser
         exploreTab.Size = New Size(865, 373)
         exploreTab.TabIndex = 1
         exploreTab.Text = "Explore"
+        ' 
+        ' dataGridViewPlaylist
+        ' 
+        DataGridViewCellStyle4.BackColor = Color.White
+        dataGridViewPlaylist.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle5.BackColor = Color.FromArgb(CByte(100), CByte(88), CByte(255))
+        DataGridViewCellStyle5.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        DataGridViewCellStyle5.ForeColor = Color.White
+        DataGridViewCellStyle5.SelectionBackColor = SystemColors.Highlight
+        DataGridViewCellStyle5.SelectionForeColor = SystemColors.HighlightText
+        DataGridViewCellStyle5.WrapMode = DataGridViewTriState.True
+        dataGridViewPlaylist.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
+        dataGridViewPlaylist.ColumnHeadersHeight = 4
+        dataGridViewPlaylist.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing
+        Guna2Transition1.SetDecoration(dataGridViewPlaylist, Guna.UI2.AnimatorNS.DecorationType.None)
+        DataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle6.BackColor = Color.White
+        DataGridViewCellStyle6.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        DataGridViewCellStyle6.ForeColor = Color.Transparent
+        DataGridViewCellStyle6.SelectionBackColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
+        DataGridViewCellStyle6.SelectionForeColor = Color.FromArgb(CByte(71), CByte(69), CByte(94))
+        DataGridViewCellStyle6.WrapMode = DataGridViewTriState.False
+        dataGridViewPlaylist.DefaultCellStyle = DataGridViewCellStyle6
+        dataGridViewPlaylist.GridColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
+        dataGridViewPlaylist.Location = New Point(3, 0)
+        dataGridViewPlaylist.Name = "dataGridViewPlaylist"
+        dataGridViewPlaylist.RowHeadersVisible = False
+        dataGridViewPlaylist.RowTemplate.Height = 25
+        dataGridViewPlaylist.Size = New Size(735, 322)
+        dataGridViewPlaylist.TabIndex = 19
+        dataGridViewPlaylist.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White
+        dataGridViewPlaylist.ThemeStyle.AlternatingRowsStyle.Font = Nothing
+        dataGridViewPlaylist.ThemeStyle.AlternatingRowsStyle.ForeColor = Color.Empty
+        dataGridViewPlaylist.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = Color.Empty
+        dataGridViewPlaylist.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = Color.Empty
+        dataGridViewPlaylist.ThemeStyle.BackColor = Color.White
+        dataGridViewPlaylist.ThemeStyle.GridColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
+        dataGridViewPlaylist.ThemeStyle.HeaderStyle.BackColor = Color.FromArgb(CByte(100), CByte(88), CByte(255))
+        dataGridViewPlaylist.ThemeStyle.HeaderStyle.BorderStyle = DataGridViewHeaderBorderStyle.None
+        dataGridViewPlaylist.ThemeStyle.HeaderStyle.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        dataGridViewPlaylist.ThemeStyle.HeaderStyle.ForeColor = Color.White
+        dataGridViewPlaylist.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing
+        dataGridViewPlaylist.ThemeStyle.HeaderStyle.Height = 4
+        dataGridViewPlaylist.ThemeStyle.ReadOnly = False
+        dataGridViewPlaylist.ThemeStyle.RowsStyle.BackColor = Color.White
+        dataGridViewPlaylist.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal
+        dataGridViewPlaylist.ThemeStyle.RowsStyle.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        dataGridViewPlaylist.ThemeStyle.RowsStyle.ForeColor = Color.Transparent
+        dataGridViewPlaylist.ThemeStyle.RowsStyle.Height = 25
+        dataGridViewPlaylist.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
+        dataGridViewPlaylist.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(CByte(71), CByte(69), CByte(94))
         ' 
         ' Guna2Button3
         ' 
@@ -704,68 +755,6 @@ Partial Class SelectionOfUser
         GbtnFS.TabIndex = 16
         GbtnFS.Text = "Filter Search"
         ' 
-        ' Guna2DataGridView1
-        ' 
-        DataGridViewCellStyle4.BackColor = Color.White
-        Guna2DataGridView1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle4
-        Guna2DataGridView1.BackgroundColor = Color.Gainsboro
-        Guna2DataGridView1.BorderStyle = BorderStyle.Fixed3D
-        Guna2DataGridView1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Raised
-        DataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle5.BackColor = Color.FromArgb(CByte(100), CByte(88), CByte(255))
-        DataGridViewCellStyle5.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
-        DataGridViewCellStyle5.ForeColor = Color.White
-        DataGridViewCellStyle5.SelectionBackColor = SystemColors.Highlight
-        DataGridViewCellStyle5.SelectionForeColor = SystemColors.HighlightText
-        DataGridViewCellStyle5.WrapMode = DataGridViewTriState.True
-        Guna2DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
-        Guna2DataGridView1.ColumnHeadersHeight = 4
-        Guna2Transition1.SetDecoration(Guna2DataGridView1, Guna.UI2.AnimatorNS.DecorationType.None)
-        DataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle6.BackColor = Color.White
-        DataGridViewCellStyle6.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
-        DataGridViewCellStyle6.ForeColor = Color.FromArgb(CByte(71), CByte(69), CByte(94))
-        DataGridViewCellStyle6.SelectionBackColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
-        DataGridViewCellStyle6.SelectionForeColor = Color.FromArgb(CByte(71), CByte(69), CByte(94))
-        DataGridViewCellStyle6.WrapMode = DataGridViewTriState.False
-        Guna2DataGridView1.DefaultCellStyle = DataGridViewCellStyle6
-        Guna2DataGridView1.EnableHeadersVisualStyles = True
-        Guna2DataGridView1.GridColor = Color.Black
-        Guna2DataGridView1.Location = New Point(4, 0)
-        Guna2DataGridView1.Margin = New Padding(4, 3, 4, 3)
-        Guna2DataGridView1.Name = "Guna2DataGridView1"
-        Guna2DataGridView1.RowHeadersVisible = False
-        Guna2DataGridView1.RowHeadersWidth = 62
-        DataGridViewCellStyle7.BackColor = Color.White
-        DataGridViewCellStyle7.ForeColor = Color.Black
-        DataGridViewCellStyle7.SelectionBackColor = Color.Gray
-        DataGridViewCellStyle7.SelectionForeColor = Color.White
-        Guna2DataGridView1.RowsDefaultCellStyle = DataGridViewCellStyle7
-        Guna2DataGridView1.RowTemplate.Height = 25
-        Guna2DataGridView1.Size = New Size(635, 321)
-        Guna2DataGridView1.TabIndex = 13
-        Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White
-        Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = Nothing
-        Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = Color.Empty
-        Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = Color.Empty
-        Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = Color.Empty
-        Guna2DataGridView1.ThemeStyle.BackColor = Color.Gainsboro
-        Guna2DataGridView1.ThemeStyle.GridColor = Color.Black
-        Guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = Color.FromArgb(CByte(100), CByte(88), CByte(255))
-        Guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = DataGridViewHeaderBorderStyle.Raised
-        Guna2DataGridView1.ThemeStyle.HeaderStyle.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
-        Guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = Color.White
-        Guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing
-        Guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 4
-        Guna2DataGridView1.ThemeStyle.ReadOnly = False
-        Guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = Color.White
-        Guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal
-        Guna2DataGridView1.ThemeStyle.RowsStyle.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
-        Guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = Color.FromArgb(CByte(71), CByte(69), CByte(94))
-        Guna2DataGridView1.ThemeStyle.RowsStyle.Height = 25
-        Guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
-        Guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(CByte(71), CByte(69), CByte(94))
-        ' 
         ' Label5
         ' 
         Label5.AutoSize = True
@@ -773,7 +762,7 @@ Partial Class SelectionOfUser
         Guna2Transition1.SetDecoration(Label5, Guna.UI2.AnimatorNS.DecorationType.None)
         Label5.Font = New Font("Agency FB", 11.25F, FontStyle.Bold, GraphicsUnit.Point)
         Label5.ForeColor = Color.White
-        Label5.Location = New Point(640, 171)
+        Label5.Location = New Point(745, 171)
         Label5.Margin = New Padding(4, 0, 4, 0)
         Label5.Name = "Label5"
         Label5.Size = New Size(32, 18)
@@ -787,11 +776,11 @@ Partial Class SelectionOfUser
         ListBox2.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
         ListBox2.FormattingEnabled = True
         ListBox2.ItemHeight = 21
-        ListBox2.Items.AddRange(New Object() {"1996", "1995", "1994", "1993", "1992", "1988", "1977", "1976", "1967", "1965", "1964"})
-        ListBox2.Location = New Point(640, 192)
+        ListBox2.Items.AddRange(New Object() {"1977", "1999", "2001", "2008", "2009", "2010", "2014", "2015"})
+        ListBox2.Location = New Point(745, 192)
         ListBox2.Margin = New Padding(4, 3, 4, 3)
         ListBox2.Name = "ListBox2"
-        ListBox2.Size = New Size(223, 130)
+        ListBox2.Size = New Size(118, 130)
         ListBox2.TabIndex = 9
         ' 
         ' BtnAddtoW
@@ -823,7 +812,7 @@ Partial Class SelectionOfUser
         Guna2Transition1.SetDecoration(Label1, Guna.UI2.AnimatorNS.DecorationType.None)
         Label1.Font = New Font("Agency FB", 11.25F, FontStyle.Bold, GraphicsUnit.Point)
         Label1.ForeColor = Color.White
-        Label1.Location = New Point(640, 1)
+        Label1.Location = New Point(745, 3)
         Label1.Margin = New Padding(4, 0, 4, 0)
         Label1.Name = "Label1"
         Label1.Size = New Size(38, 18)
@@ -838,10 +827,10 @@ Partial Class SelectionOfUser
         ListBox1.FormattingEnabled = True
         ListBox1.ItemHeight = 21
         ListBox1.Items.AddRange(New Object() {"Action", "Adventure", "Animation", "Children", "Comedy", "Crime", "Documentary", "Drama", "Fantasy", "Horror", "Musical", "Mystery", "Romance", "Sci-Fi", "Thriller", "War", "Western"})
-        ListBox1.Location = New Point(639, 24)
+        ListBox1.Location = New Point(745, 24)
         ListBox1.Margin = New Padding(4, 3, 4, 3)
         ListBox1.Name = "ListBox1"
-        ListBox1.Size = New Size(222, 130)
+        ListBox1.Size = New Size(116, 130)
         ListBox1.TabIndex = 6
         ' 
         ' BtnSrch
@@ -1071,7 +1060,7 @@ Partial Class SelectionOfUser
         CType(Guna2DataGridView2, ComponentModel.ISupportInitialize).EndInit()
         exploreTab.ResumeLayout(False)
         exploreTab.PerformLayout()
-        CType(Guna2DataGridView1, ComponentModel.ISupportInitialize).EndInit()
+        CType(dataGridViewPlaylist, ComponentModel.ISupportInitialize).EndInit()
         CType(Guna2PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
@@ -1099,7 +1088,6 @@ Partial Class SelectionOfUser
     Friend WithEvents TextBox4 As TextBox
     Friend WithEvents BtnSrch As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2TextBox1 As Guna.UI2.WinForms.Guna2TextBox
-    Friend WithEvents Guna2DataGridView1 As Guna.UI2.WinForms.Guna2DataGridView
     Friend WithEvents Guna2Button3 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents GbtnFS As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Watchlist As TabPage
@@ -1130,4 +1118,5 @@ Partial Class SelectionOfUser
     Friend WithEvents Guna2PictureBox5 As Guna.UI2.WinForms.Guna2PictureBox
     Friend WithEvents Guna2PictureBox4 As Guna.UI2.WinForms.Guna2PictureBox
     Friend WithEvents Guna2PictureBox3 As Guna.UI2.WinForms.Guna2PictureBox
+    Friend WithEvents dataGridViewPlaylist As Guna.UI2.WinForms.Guna2DataGridView
 End Class
