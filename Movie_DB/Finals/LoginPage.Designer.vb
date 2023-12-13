@@ -37,7 +37,7 @@ Partial Class LoginPage
         Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges13 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges14 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(LoginPage))
+        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(LoginPage))
         Guna2BorderlessForm1 = New Guna.UI2.WinForms.Guna2BorderlessForm(components)
         Guna2ShadowPanel1 = New Guna.UI2.WinForms.Guna2ShadowPanel()
         Guna2ControlBox2 = New Guna.UI2.WinForms.Guna2ControlBox()
@@ -62,14 +62,13 @@ Partial Class LoginPage
         ' 
         ' Guna2ShadowPanel1
         ' 
-        Guna2ShadowPanel1.BackColor = Color.Transparent
-        Guna2ShadowPanel1.BackgroundImage = CType(resources.GetObject("Guna2ShadowPanel1.BackgroundImage"), Image)
+        Guna2ShadowPanel1.BackColor = Color.FromArgb(CByte(15), CByte(15), CByte(15))
         Guna2ShadowPanel1.Controls.Add(Guna2ControlBox2)
         Guna2ShadowPanel1.Controls.Add(Guna2ControlBox1)
         Guna2ShadowPanel1.FillColor = Color.Transparent
         Guna2ShadowPanel1.Location = New Point(0, 0)
         Guna2ShadowPanel1.Name = "Guna2ShadowPanel1"
-        Guna2ShadowPanel1.ShadowColor = Color.Black
+        Guna2ShadowPanel1.ShadowColor = Color.FromArgb(CByte(15), CByte(15), CByte(15))
         Guna2ShadowPanel1.ShadowDepth = 70
         Guna2ShadowPanel1.ShadowShift = 100
         Guna2ShadowPanel1.Size = New Size(800, 30)
@@ -80,7 +79,7 @@ Partial Class LoginPage
         Guna2ControlBox2.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         Guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox
         Guna2ControlBox2.CustomizableEdges = CustomizableEdges7
-        Guna2ControlBox2.FillColor = Color.Transparent
+        Guna2ControlBox2.FillColor = Color.FromArgb(CByte(15), CByte(15), CByte(15))
         Guna2ControlBox2.IconColor = Color.DimGray
         Guna2ControlBox2.Location = New Point(743, 3)
         Guna2ControlBox2.Name = "Guna2ControlBox2"
@@ -92,7 +91,7 @@ Partial Class LoginPage
         ' 
         Guna2ControlBox1.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         Guna2ControlBox1.CustomizableEdges = CustomizableEdges9
-        Guna2ControlBox1.FillColor = Color.Transparent
+        Guna2ControlBox1.FillColor = Color.FromArgb(CByte(15), CByte(15), CByte(15))
         Guna2ControlBox1.IconColor = Color.DimGray
         Guna2ControlBox1.Location = New Point(773, 3)
         Guna2ControlBox1.Name = "Guna2ControlBox1"
